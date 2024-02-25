@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Controllers",
+    "\\Data",
+    "\\Data\\Concrete",
+    "\\Data\\Concrete\\EfCore",
+    "\\Entity",
+    "\\Migrations",
+    "\\Views",
+    "\\Views\\Home"
+  ],
+  "SelectedNode": "\\Views\\Home\\index.cshtml",
+  "PreviewInSolutionExplorer": false
+}

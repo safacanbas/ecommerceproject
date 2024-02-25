@@ -1,5 +1,8 @@
+using Ecommerce.Data.Abstract;
+using Ecommerce.Data.Concrete;
 using Ecommerce.Data.Concrete.EfCore;
 using Ecommerce.Entity;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -8,6 +11,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<ProductContext>(options => { options.UseSqlite(builder.Configuration["ConnectionStrings:Sql_connection"]); });
+
+builder.Services.AddScoped<IProductRepository, EfProductRepository>();
+builder.Services.AddScoped<ICommentRepository, EfCommentRepository>();
 
 var app = builder.Build();
 
@@ -26,7 +32,13 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
+
 SeedData.TestVerileriniDoldur(app);
+
+app.MapControllerRoute(
+    name: "product_detail",
+    pattern: "Product/productDetail/{url}",
+    defaults: new {controller = "Product", action = "productDetail" });
 
 app.MapControllerRoute(
     name: "default",
