@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\safa5\\Desktop\\proje\\Ecommerce\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{797E0B06-2862-4549-B97E-6A65FCDB3B93}|Ecommerce.csproj|c:\\users\\safa5\\desktop\\proje\\ecommerce\\views\\product\\product.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{797E0B06-2862-4549-B97E-6A65FCDB3B93}|Ecommerce.csproj|solutionrelative:views\\product\\product.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{797E0B06-2862-4549-B97E-6A65FCDB3B93}|Ecommerce.csproj|c:\\users\\safa5\\desktop\\proje\\ecommerce\\views\\product\\productdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{797E0B06-2862-4549-B97E-6A65FCDB3B93}|Ecommerce.csproj|solutionrelative:views\\product\\productdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{797E0B06-2862-4549-B97E-6A65FCDB3B93}|Ecommerce.csproj|c:\\users\\safa5\\desktop\\proje\\ecommerce\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{797E0B06-2862-4549-B97E-6A65FCDB3B93}|Ecommerce.csproj|solutionrelative:controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,23 +18,39 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\safa5\\Desktop\\proje\\Ecommerce\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\safa5\\Desktop\\proje\\Ecommerce\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "Controllers\\ProductController.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAQwDcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-25T23:08:44.082Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "product.cshtml",
-              "DocumentMoniker": "C:\\Users\\safa5\\Desktop\\proje\\Ecommerce\\Views\\Product\\product.cshtml",
-              "RelativeDocumentMoniker": "Views\\Product\\product.cshtml",
-              "ToolTip": "C:\\Users\\safa5\\Desktop\\proje\\Ecommerce\\Views\\Product\\product.cshtml",
-              "RelativeToolTip": "Views\\Product\\product.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIBAAAAAAAA",
+              "Title": "productDetail.cshtml",
+              "DocumentMoniker": "C:\\Users\\safa5\\Desktop\\proje\\Ecommerce\\Views\\Product\\productDetail.cshtml",
+              "RelativeDocumentMoniker": "Views\\Product\\productDetail.cshtml",
+              "ToolTip": "C:\\Users\\safa5\\Desktop\\proje\\Ecommerce\\Views\\Product\\productDetail.cshtml",
+              "RelativeToolTip": "Views\\Product\\productDetail.cshtml",
+              "ViewState": "AQIAAGcBAAAAAAAAAAAQwIsBAABlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-02-25T19:22:08.783Z",
+              "WhenOpened": "2024-02-25T23:00:43.768Z",
               "EditorCaption": ""
             }
           ]

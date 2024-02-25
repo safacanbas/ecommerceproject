@@ -35,17 +35,23 @@ public class ProductController : Controller
     }
 
     [HttpPost]
-    public IActionResult AddComment(int ProductId, string UserName, string Text, string Url)
+    public JsonResult AddComment(int ProductId, string UserName, string Text)
     {
         var entity = new Comment
         {
             Text = Text,
             PublishedOn = DateTime.Now,
             ProductId = ProductId,
-            User = new User { UserName = UserName, UserImage= "userImage.jpg" },
+            User = new User { UserName = UserName, UserImage = "userImage.jpg" },
         };
         _commentRepository.CreateComments(entity);
-        return Redirect("/Product/productDetail/" + Url);
+        return Json(new
+        {
+            UserName,
+            Text,
+            entity.PublishedOn,
+            entity.User.UserImage
+        });
     }
 
 }
