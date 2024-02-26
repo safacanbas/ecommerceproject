@@ -5,20 +5,24 @@
             <a asp-controller="Contact" asp-action="contact" class="flex-c-m trans-04 p-lr-25">
                 Help
             </a>
-            @if(User.Identity!.IsAuthenticated){
-            <a href="#" class="flex-c-m trans-04 p-lr-25">
-                @User.Identity.Name
-            </a>
-                <a asp-controller="Login" asp-action="login" class="flex-c-m trans-04 p-lr-25">
-                Logout
-            </a>
+            @if (User.Identity!.IsAuthenticated)
+            {
+                <a href="#" class="flex-c-m trans-04 p-lr-25">
+                    @User.Identity.Name
+                </a>
+                <a asp-controller="LoginRegister" asp-action="Logout" class="flex-c-m trans-04 p-lr-25">
+                    Logout
+                </a>
             }
-            else {
-            <a asp-controller="Login" asp-action="login" class="flex-c-m trans-04 p-lr-25">
-                Login
-            </a>
+            else
+            {
+                <a asp-controller="LoginRegister" asp-action="Login" class="flex-c-m trans-04 p-lr-25">
+                    Login
+                </a>
+                <a asp-controller="LoginRegister" asp-action="Register" class="flex-c-m trans-04 p-lr-25">
+                    Sign Up
+                </a>
             }
-
             <a href="#" class="flex-c-m trans-04 p-lr-25">
                 TL
             </a>

@@ -3,48 +3,44 @@
   "WorkspaceRootPath": "D:\\Asp.Net Core Proje\\proje\\Ecommerce\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{797E0B06-2862-4549-B97E-6A65FCDB3B93}|Ecommerce.csproj|d:\\asp.net core proje\\proje\\ecommerce\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{797E0B06-2862-4549-B97E-6A65FCDB3B93}|Ecommerce.csproj|solutionrelative:controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{797E0B06-2862-4549-B97E-6A65FCDB3B93}|Ecommerce.csproj|d:\\asp.net core proje\\proje\\ecommerce\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{797E0B06-2862-4549-B97E-6A65FCDB3B93}|Ecommerce.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{797E0B06-2862-4549-B97E-6A65FCDB3B93}|Ecommerce.csproj|d:\\asp.net core proje\\proje\\ecommerce\\views\\loginregister\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{797E0B06-2862-4549-B97E-6A65FCDB3B93}|Ecommerce.csproj|solutionrelative:views\\loginregister\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{797E0B06-2862-4549-B97E-6A65FCDB3B93}|Ecommerce.csproj|d:\\asp.net core proje\\proje\\ecommerce\\views\\shared\\header\\_headerdesktop.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{797E0B06-2862-4549-B97E-6A65FCDB3B93}|Ecommerce.csproj|solutionrelative:views\\shared\\header\\_headerdesktop.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{797E0B06-2862-4549-B97E-6A65FCDB3B93}|Ecommerce.csproj|d:\\asp.net core proje\\proje\\ecommerce\\views\\login\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{797E0B06-2862-4549-B97E-6A65FCDB3B93}|Ecommerce.csproj|solutionrelative:views\\login\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{797E0B06-2862-4549-B97E-6A65FCDB3B93}|Ecommerce.csproj|d:\\asp.net core proje\\proje\\ecommerce\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{797E0B06-2862-4549-B97E-6A65FCDB3B93}|Ecommerce.csproj|solutionrelative:models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{797E0B06-2862-4549-B97E-6A65FCDB3B93}|Ecommerce.csproj|d:\\asp.net core proje\\proje\\ecommerce\\data\\concrete\\efcore\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{797E0B06-2862-4549-B97E-6A65FCDB3B93}|Ecommerce.csproj|solutionrelative:data\\concrete\\efcore\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{797E0B06-2862-4549-B97E-6A65FCDB3B93}|Ecommerce.csproj|d:\\asp.net core proje\\proje\\ecommerce\\entity\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{797E0B06-2862-4549-B97E-6A65FCDB3B93}|Ecommerce.csproj|solutionrelative:entity\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{797E0B06-2862-4549-B97E-6A65FCDB3B93}|Ecommerce.csproj|d:\\asp.net core proje\\proje\\ecommerce\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{797E0B06-2862-4549-B97E-6A65FCDB3B93}|Ecommerce.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{797E0B06-2862-4549-B97E-6A65FCDB3B93}|Ecommerce.csproj|d:\\asp.net core proje\\proje\\ecommerce\\views\\shared\\_footer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{797E0B06-2862-4549-B97E-6A65FCDB3B93}|Ecommerce.csproj|solutionrelative:views\\shared\\_footer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{797E0B06-2862-4549-B97E-6A65FCDB3B93}|Ecommerce.csproj|d:\\asp.net core proje\\proje\\ecommerce\\controllers\\loginregistercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{797E0B06-2862-4549-B97E-6A65FCDB3B93}|Ecommerce.csproj|solutionrelative:controllers\\loginregistercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{797E0B06-2862-4549-B97E-6A65FCDB3B93}|Ecommerce.csproj|d:\\asp.net core proje\\proje\\ecommerce\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{797E0B06-2862-4549-B97E-6A65FCDB3B93}|Ecommerce.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{797E0B06-2862-4549-B97E-6A65FCDB3B93}|Ecommerce.csproj|d:\\asp.net core proje\\proje\\ecommerce\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{797E0B06-2862-4549-B97E-6A65FCDB3B93}|Ecommerce.csproj|solutionrelative:controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{797E0B06-2862-4549-B97E-6A65FCDB3B93}|Ecommerce.csproj|d:\\asp.net core proje\\proje\\ecommerce\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{797E0B06-2862-4549-B97E-6A65FCDB3B93}|Ecommerce.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{797E0B06-2862-4549-B97E-6A65FCDB3B93}|Ecommerce.csproj|d:\\asp.net core proje\\proje\\ecommerce\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{797E0B06-2862-4549-B97E-6A65FCDB3B93}|Ecommerce.csproj|solutionrelative:models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{797E0B06-2862-4549-B97E-6A65FCDB3B93}|Ecommerce.csproj|d:\\asp.net core proje\\proje\\ecommerce\\views\\loginregister\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{797E0B06-2862-4549-B97E-6A65FCDB3B93}|Ecommerce.csproj|solutionrelative:views\\loginregister\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{797E0B06-2862-4549-B97E-6A65FCDB3B93}|Ecommerce.csproj|d:\\asp.net core proje\\proje\\ecommerce\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{797E0B06-2862-4549-B97E-6A65FCDB3B93}|Ecommerce.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{797E0B06-2862-4549-B97E-6A65FCDB3B93}|Ecommerce.csproj|d:\\asp.net core proje\\proje\\ecommerce\\models\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{797E0B06-2862-4549-B97E-6A65FCDB3B93}|Ecommerce.csproj|solutionrelative:models\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{797E0B06-2862-4549-B97E-6A65FCDB3B93}|Ecommerce.csproj|d:\\asp.net core proje\\proje\\ecommerce\\entity\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{797E0B06-2862-4549-B97E-6A65FCDB3B93}|Ecommerce.csproj|solutionrelative:entity\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -53,8 +49,8 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 246,
-          "SelectedChildIndex": 4,
+          "DockedWidth": 251,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -66,20 +62,72 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "register.cshtml",
+              "DocumentMoniker": "D:\\Asp.Net Core Proje\\proje\\Ecommerce\\Views\\LoginRegister\\register.cshtml",
+              "RelativeDocumentMoniker": "Views\\LoginRegister\\register.cshtml",
+              "ToolTip": "D:\\Asp.Net Core Proje\\proje\\Ecommerce\\Views\\LoginRegister\\register.cshtml*",
+              "RelativeToolTip": "Views\\LoginRegister\\register.cshtml*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-02-26T22:42:56.346Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "_HeaderDesktop.cshtml",
               "DocumentMoniker": "D:\\Asp.Net Core Proje\\proje\\Ecommerce\\Views\\Shared\\Header\\_HeaderDesktop.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\Header\\_HeaderDesktop.cshtml",
               "ToolTip": "D:\\Asp.Net Core Proje\\proje\\Ecommerce\\Views\\Shared\\Header\\_HeaderDesktop.cshtml",
               "RelativeToolTip": "Views\\Shared\\Header\\_HeaderDesktop.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA8AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-02-26T14:42:46.23Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "LoginRegisterController.cs",
+              "DocumentMoniker": "D:\\Asp.Net Core Proje\\proje\\Ecommerce\\Controllers\\LoginRegisterController.cs",
+              "RelativeDocumentMoniker": "Controllers\\LoginRegisterController.cs",
+              "ToolTip": "D:\\Asp.Net Core Proje\\proje\\Ecommerce\\Controllers\\LoginRegisterController.cs",
+              "RelativeToolTip": "Controllers\\LoginRegisterController.cs",
+              "ViewState": "AQIAAE0AAAAAAAAAAAAIwHEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-26T12:44:24.922Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Asp.Net Core Proje\\proje\\Ecommerce\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Asp.Net Core Proje\\proje\\Ecommerce\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAACJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-26T13:25:17.866Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RegisterViewModel.cs",
+              "DocumentMoniker": "D:\\Asp.Net Core Proje\\proje\\Ecommerce\\Models\\RegisterViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\RegisterViewModel.cs",
+              "ToolTip": "D:\\Asp.Net Core Proje\\proje\\Ecommerce\\Models\\RegisterViewModel.cs",
+              "RelativeToolTip": "Models\\RegisterViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-26T12:30:06.093Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "HomeController.cs",
               "DocumentMoniker": "D:\\Asp.Net Core Proje\\proje\\Ecommerce\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
@@ -92,125 +140,60 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "LoginController.cs",
-              "DocumentMoniker": "D:\\Asp.Net Core Proje\\proje\\Ecommerce\\Controllers\\LoginController.cs",
-              "RelativeDocumentMoniker": "Controllers\\LoginController.cs",
-              "ToolTip": "D:\\Asp.Net Core Proje\\proje\\Ecommerce\\Controllers\\LoginController.cs",
-              "RelativeToolTip": "Controllers\\LoginController.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAAAFQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-26T12:44:24.922Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Asp.Net Core Proje\\proje\\Ecommerce\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\Asp.Net Core Proje\\proje\\Ecommerce\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-26T13:25:17.866Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "LoginViewModel.cs",
-              "DocumentMoniker": "D:\\Asp.Net Core Proje\\proje\\Ecommerce\\Models\\LoginViewModel.cs",
-              "RelativeDocumentMoniker": "Models\\LoginViewModel.cs",
-              "ToolTip": "D:\\Asp.Net Core Proje\\proje\\Ecommerce\\Models\\LoginViewModel.cs",
-              "RelativeToolTip": "Models\\LoginViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-26T12:30:06.093Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "login.cshtml",
-              "DocumentMoniker": "D:\\Asp.Net Core Proje\\proje\\Ecommerce\\Views\\Login\\login.cshtml",
-              "RelativeDocumentMoniker": "Views\\Login\\login.cshtml",
-              "ToolTip": "D:\\Asp.Net Core Proje\\proje\\Ecommerce\\Views\\Login\\login.cshtml",
-              "RelativeToolTip": "Views\\Login\\login.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAA7AAAA",
+              "DocumentMoniker": "D:\\Asp.Net Core Proje\\proje\\Ecommerce\\Views\\LoginRegister\\login.cshtml",
+              "RelativeDocumentMoniker": "Views\\LoginRegister\\login.cshtml",
+              "ToolTip": "D:\\Asp.Net Core Proje\\proje\\Ecommerce\\Views\\LoginRegister\\login.cshtml",
+              "RelativeToolTip": "Views\\LoginRegister\\login.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAA/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-02-26T12:24:00.373Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 3,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "D:\\Asp.Net Core Proje\\proje\\Ecommerce\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
               "ToolTip": "D:\\Asp.Net Core Proje\\proje\\Ecommerce\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAADMAAAAUAAAA",
+              "ViewState": "AQIAAEEAAAAAAAAAAAAvwGYAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-02-25T23:36:21.107Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "D:\\Asp.Net Core Proje\\proje\\Ecommerce\\Models\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\LoginViewModel.cs",
+              "ToolTip": "D:\\Asp.Net Core Proje\\proje\\Ecommerce\\Models\\LoginViewModel.cs",
+              "RelativeToolTip": "Models\\LoginViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-26T23:23:51.222Z",
               "EditorCaption": ""
             }
           ]
         },
         {
-          "DockedWidth": 154,
+          "DockedWidth": 183,
           "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "SeedData.cs",
-              "DocumentMoniker": "D:\\Asp.Net Core Proje\\proje\\Ecommerce\\Data\\Concrete\\EfCore\\SeedData.cs",
-              "RelativeDocumentMoniker": "Data\\Concrete\\EfCore\\SeedData.cs",
-              "ToolTip": "D:\\Asp.Net Core Proje\\proje\\Ecommerce\\Data\\Concrete\\EfCore\\SeedData.cs",
-              "RelativeToolTip": "Data\\Concrete\\EfCore\\SeedData.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAABvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-26T13:55:01.904Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ContactController.cs",
-              "DocumentMoniker": "D:\\Asp.Net Core Proje\\proje\\Ecommerce\\Controllers\\ContactController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ContactController.cs",
-              "ToolTip": "D:\\Asp.Net Core Proje\\proje\\Ecommerce\\Controllers\\ContactController.cs",
-              "RelativeToolTip": "Controllers\\ContactController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-26T12:52:22.479Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "User.cs",
               "DocumentMoniker": "D:\\Asp.Net Core Proje\\proje\\Ecommerce\\Entity\\User.cs",
               "RelativeDocumentMoniker": "Entity\\User.cs",
               "ToolTip": "D:\\Asp.Net Core Proje\\proje\\Ecommerce\\Entity\\User.cs",
               "RelativeToolTip": "Entity\\User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAZAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-26T12:18:25.864Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "_Footer.cshtml",
-              "DocumentMoniker": "D:\\Asp.Net Core Proje\\proje\\Ecommerce\\Views\\Shared\\_Footer.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Footer.cshtml",
-              "ToolTip": "D:\\Asp.Net Core Proje\\proje\\Ecommerce\\Views\\Shared\\_Footer.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Footer.cshtml",
-              "ViewState": "AQIAAHEAAAAAAAAAAAAgwJUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-02-26T12:57:38.952Z",
+              "WhenOpened": "2024-02-26T18:59:36.771Z",
               "EditorCaption": ""
             }
           ]

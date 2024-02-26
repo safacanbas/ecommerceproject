@@ -1321,6 +1321,10 @@
       "PackagePath": "staticwebassets\\assets\\images\\thumb-03.jpg"
     },
     {
+      "Id": "D:\\Asp.Net Core Proje\\proje\\Ecommerce\\wwwroot\\assets\\images\\userImage\\bosAvatar.png",
+      "PackagePath": "staticwebassets\\assets\\images\\userImage\\bosAvatar.png"
+    },
+    {
       "Id": "D:\\Asp.Net Core Proje\\proje\\Ecommerce\\wwwroot\\assets\\images\\userImage\\userImage.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\userImage\\userImage.jpg"
     },

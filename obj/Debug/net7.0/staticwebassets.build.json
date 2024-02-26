@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "rzFOBwVBzdpA8wUTFZbIphR9zfi1YfxDLkoF+xU3p+A=",
+  "Hash": "Jx6GMmhou1l0g51Ef66yYcTPm/1xXLjquTKS8qtdVX4=",
   "Source": "Ecommerce",
   "BasePath": "_content/Ecommerce",
   "Mode": "Default",
@@ -6304,6 +6304,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\thumb-03.jpg"
+    },
+    {
+      "Identity": "D:\\Asp.Net Core Proje\\proje\\Ecommerce\\wwwroot\\assets\\images\\userImage\\bosAvatar.png",
+      "SourceId": "Ecommerce",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Asp.Net Core Proje\\proje\\Ecommerce\\wwwroot\\",
+      "BasePath": "_content/Ecommerce",
+      "RelativePath": "assets/images/userImage/bosAvatar.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\userImage\\bosAvatar.png"
     },
     {
       "Identity": "D:\\Asp.Net Core Proje\\proje\\Ecommerce\\wwwroot\\assets\\images\\userImage\\userImage.jpg",

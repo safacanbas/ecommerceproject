@@ -1,15 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\Controllers",
-    "\\Data",
-    "\\Data\\Concrete",
-    "\\Data\\Concrete\\EfCore",
-    "\\Entity",
-    "\\Migrations",
-    "\\Views",
-    "\\Views\\Home"
+    ""
   ],
-  "SelectedNode": "\\Views\\Home\\index.cshtml",
+  "SelectedNode": "\\Ecommerce.sln",
   "PreviewInSolutionExplorer": false
 }

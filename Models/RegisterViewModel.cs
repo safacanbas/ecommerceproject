@@ -3,8 +3,16 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Ecommerce.Models
 {
-    public class LoginViewModel
+    public class RegisterViewModel
     {
+        [Required]
+        [Display(Name = "User Name")]
+        public string? Name { get; set; }
+
+        [Required]
+        [Display(Name = "Full Name")]
+        public string? FullName { get; set; }
+
         [Required]
         [EmailAddress]
         [Display(Name = "Email")]
@@ -15,5 +23,12 @@ namespace Ecommerce.Models
         [DataType(DataType.Password)]
         [Display(Name = "Password")]
         public string? Password { get; set; }
+
+        [Required]
+        [DataType(DataType.Password)]
+        [Compare(nameof(Password), ErrorMessage = "Parolalarınız birbiriyle eşleşmiyor.")]
+        [Display(Name = "Password")]
+        public string? ConfirmPassword { get; set; }
+
     }
 }

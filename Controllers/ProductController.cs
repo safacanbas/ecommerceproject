@@ -6,6 +6,7 @@ using Ecommerce.Data.Abstract;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection.Metadata.Ecma335;
 using Ecommerce.Entity;
+using System.Security.Claims;
 
 namespace Ecommerce.Controllers;
 
@@ -35,22 +36,26 @@ public class ProductController : Controller
     }
 
     [HttpPost]
-    public JsonResult AddComment(int ProductId, string UserName, string Text)
+    public JsonResult AddComment(int ProductId, string Text)
     {
+        var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+        var userName = User.FindFirstValue(ClaimTypes.Name);
+        var userImage = User.FindFirstValue(ClaimTypes.UserData);
+
         var entity = new Comment
         {
             Text = Text,
             PublishedOn = DateTime.Now,
             ProductId = ProductId,
-            User = new User { Name = UserName, UserImage = "userImage.jpg" },
+            UserId = int.Parse(userId ?? ""),
         };
         _commentRepository.CreateComments(entity);
         return Json(new
         {
-            UserName,
+            userName,
             Text,
             entity.PublishedOn,
-            entity.User.UserImage
+            userImage
         });
     }
 

@@ -36,7 +36,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                             Image = "product_1/1.jpeg",
                             ImageDetail_1 = "product_1/2.jpeg",
                             ImageDetail_2 = "product_1/3.jpeg",
-                            Description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget ligula condimentum, semper metus in, hendrerit libero. Nullam volutpat elementum vestibulum. Curabitur posuere ultrices mi. Aliquam gravida mi sed dictum maximus. Vivamus nec mauris aliquam, semper odio nec, elementum diam. Sed sit amet mollis nisi. Curabitur pharetra hendrerit lorem quis.",
+                            Description = "Kampanya fiyatından satılmak üzere 100 adetten fazla stok sunulmuştur.\r\nİncelemiş olduğunuz ürünün satış fiyatını satıcı belirlemektedir.\r\nBir ürün, birden fazla satıcı tarafından satılabilir. Birden fazla satıcı tarafından satışa sunulan ürünlerin satıcıları ürün için belirledikleri fiyata, satıcı puanlarına, teslimat statülerine, ürünlerdeki promosyonlara, kargonun bedava olup olmamasına ve ürünlerin hızlı teslimat ile teslim edilip edilememesine, ürünlerin stok ve kategorileri bilgilerine göre sıralanmaktadır.\r\nBu üründen en fazla 10 adet sipariş verilebilir.Belirlenen bu limit kurumsal siparişlerde geçerli olmayıp, kurumsal siparişler için farklı limitler belirlenebilmektedir.\r\n15 gün içinde ücretsiz iade. Detaylı bilgi için tıklayın.",
                             Materials = "60% cotton",
                             Dimensions = "110 x 33 x 100 cm",
                             Size = "S",
@@ -50,7 +50,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                             {
                                 new Comment
                                 {
-                                    Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec hendrerit libero, eu efficitur ex. Vestibulum eu pulvinar sem. Nam eget pharetra diam, id lobortis leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer posuere ultricies convallis. Sed convallis faucibus dui molestie malesuada. Aenean ultricies risus nec sem faucibus dignissim. Curabitur ut metus rutrum, luctus diam sed, venenatis sem. Nulla facilisi.",
+                                    Text = "Güzel. Çok beğendim.",
                                     PublishedOn = DateTime.Now,
                                     ProductId = 1,
                                     UserId = 1
@@ -63,7 +63,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                             Image = "product_2/1.jpeg",
                             ImageDetail_1 = "product_2/2.jpeg",
                             ImageDetail_2 = "product_2/3.jpeg",
-                            Description = "ürün açıklaması",
+                            Description = "Kampanya fiyatından satılmak üzere 100 adetten fazla stok sunulmuştur.\r\nİncelemiş olduğunuz ürünün satış fiyatını satıcı belirlemektedir.\r\nBir ürün, birden fazla satıcı tarafından satılabilir. Birden fazla satıcı tarafından satışa sunulan ürünlerin satıcıları ürün için belirledikleri fiyata, satıcı puanlarına, teslimat statülerine, ürünlerdeki promosyonlara, kargonun bedava olup olmamasına ve ürünlerin hızlı teslimat ile teslim edilip edilememesine, ürünlerin stok ve kategorileri bilgilerine göre sıralanmaktadır.\r\nBu üründen en fazla 10 adet sipariş verilebilir.Belirlenen bu limit kurumsal siparişlerde geçerli olmayıp, kurumsal siparişler için farklı limitler belirlenebilmektedir.\r\n15 gün içinde ücretsiz iade. Detaylı bilgi için tıklayın.",
                             Materials = "60% cotton",
                             Dimensions = "110 x 33 x 100 cm",
                             Size = "L",
@@ -76,7 +76,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                             Comments = new List<Comment>
                             {
                                 new Comment{
-                                    Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec hendrerit libero, eu efficitur ex. Vestibulum eu pulvinar sem. Nam eget pharetra diam, id lobortis leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer posuere ultricies convallis. Sed convallis faucibus dui molestie malesuada. Aenean ultricies risus nec sem faucibus dignissim. Curabitur ut metus rutrum, luctus diam sed, venenatis sem. Nulla facilisi.",
+                                    Text = "Güzel. Çok beğendim.",
                                     PublishedOn = DateTime.Now.AddDays(-7),
                                     ProductId = 1,
                                     UserId = 1
@@ -89,7 +89,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                             Image = "product_3/1.jpeg",
                             ImageDetail_1 = "product_3/2.jpeg",
                             ImageDetail_2 = "product_3/3.jpeg",
-                            Description = "ürün açıklaması",
+                            Description = "Kampanya fiyatından satılmak üzere 100 adetten fazla stok sunulmuştur.\r\nİncelemiş olduğunuz ürünün satış fiyatını satıcı belirlemektedir.\r\nBir ürün, birden fazla satıcı tarafından satılabilir. Birden fazla satıcı tarafından satışa sunulan ürünlerin satıcıları ürün için belirledikleri fiyata, satıcı puanlarına, teslimat statülerine, ürünlerdeki promosyonlara, kargonun bedava olup olmamasına ve ürünlerin hızlı teslimat ile teslim edilip edilememesine, ürünlerin stok ve kategorileri bilgilerine göre sıralanmaktadır.\r\nBu üründen en fazla 10 adet sipariş verilebilir.Belirlenen bu limit kurumsal siparişlerde geçerli olmayıp, kurumsal siparişler için farklı limitler belirlenebilmektedir.\r\n15 gün içinde ücretsiz iade. Detaylı bilgi için tıklayın.",
                             Materials = "60% cotton",
                             Dimensions = "110 x 33 x 100 cm",
                             Size = "L",
@@ -102,7 +102,7 @@ namespace Ecommerce.Data.Concrete.EfCore
 ,                            Comments = new List<Comment>
                             {
                                 new Comment{
-                                    Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec hendrerit libero, eu efficitur ex. Vestibulum eu pulvinar sem. Nam eget pharetra diam, id lobortis leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer posuere ultricies convallis. Sed convallis faucibus dui molestie malesuada. Aenean ultricies risus nec sem faucibus dignissim. Curabitur ut metus rutrum, luctus diam sed, venenatis sem. Nulla facilisi.",
+                                    Text = "Güzel. Çok beğendim.",
                                     PublishedOn = DateTime.Now.AddDays(-7),
                                     ProductId = 1,
                                     UserId = 1
@@ -115,7 +115,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                             Image = "product_4/1.jpeg",
                             ImageDetail_1 = "product_4/2.jpeg",
                             ImageDetail_2 = "product_4/3.jpeg",
-                            Description = "ürün açıklaması",
+                            Description = "Kampanya fiyatından satılmak üzere 100 adetten fazla stok sunulmuştur.\r\nİncelemiş olduğunuz ürünün satış fiyatını satıcı belirlemektedir.\r\nBir ürün, birden fazla satıcı tarafından satılabilir. Birden fazla satıcı tarafından satışa sunulan ürünlerin satıcıları ürün için belirledikleri fiyata, satıcı puanlarına, teslimat statülerine, ürünlerdeki promosyonlara, kargonun bedava olup olmamasına ve ürünlerin hızlı teslimat ile teslim edilip edilememesine, ürünlerin stok ve kategorileri bilgilerine göre sıralanmaktadır.\r\nBu üründen en fazla 10 adet sipariş verilebilir.Belirlenen bu limit kurumsal siparişlerde geçerli olmayıp, kurumsal siparişler için farklı limitler belirlenebilmektedir.\r\n15 gün içinde ücretsiz iade. Detaylı bilgi için tıklayın.",
                             Materials = "60% cotton",
                             Dimensions = "110 x 33 x 100 cm",
                             Size = "L",
@@ -128,7 +128,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                             Comments = new List<Comment>
                             {
                                 new Comment{
-                                    Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec hendrerit libero, eu efficitur ex. Vestibulum eu pulvinar sem. Nam eget pharetra diam, id lobortis leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer posuere ultricies convallis. Sed convallis faucibus dui molestie malesuada. Aenean ultricies risus nec sem faucibus dignissim. Curabitur ut metus rutrum, luctus diam sed, venenatis sem. Nulla facilisi.",
+                                    Text = "Güzel. Çok beğendim.",
                                     PublishedOn = DateTime.Now.AddDays(-7),
                                     ProductId = 1,
                                     UserId = 1
@@ -141,7 +141,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                             Image = "product_5/1.jpeg",
                             ImageDetail_1 = "product_5/2.jpeg",
                             ImageDetail_2 = "product_5/3.jpeg",
-                            Description = "ürün açıklaması",
+                            Description = "Kampanya fiyatından satılmak üzere 100 adetten fazla stok sunulmuştur.\r\nİncelemiş olduğunuz ürünün satış fiyatını satıcı belirlemektedir.\r\nBir ürün, birden fazla satıcı tarafından satılabilir. Birden fazla satıcı tarafından satışa sunulan ürünlerin satıcıları ürün için belirledikleri fiyata, satıcı puanlarına, teslimat statülerine, ürünlerdeki promosyonlara, kargonun bedava olup olmamasına ve ürünlerin hızlı teslimat ile teslim edilip edilememesine, ürünlerin stok ve kategorileri bilgilerine göre sıralanmaktadır.\r\nBu üründen en fazla 10 adet sipariş verilebilir.Belirlenen bu limit kurumsal siparişlerde geçerli olmayıp, kurumsal siparişler için farklı limitler belirlenebilmektedir.\r\n15 gün içinde ücretsiz iade. Detaylı bilgi için tıklayın.",
                             Materials = "60% cotton",
                             Dimensions = "110 x 33 x 100 cm",
                             Size = "L",
@@ -154,7 +154,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                             Comments = new List<Comment>
                             {
                                 new Comment{
-                                    Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec hendrerit libero, eu efficitur ex. Vestibulum eu pulvinar sem. Nam eget pharetra diam, id lobortis leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer posuere ultricies convallis. Sed convallis faucibus dui molestie malesuada. Aenean ultricies risus nec sem faucibus dignissim. Curabitur ut metus rutrum, luctus diam sed, venenatis sem. Nulla facilisi.",
+                                    Text = "Güzel. Çok beğendim.",
                                     PublishedOn = DateTime.Now.AddDays(-7),
                                     ProductId = 1,
                                     UserId = 1
@@ -167,7 +167,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                             Image = "product_6/1.jpeg",
                             ImageDetail_1 = "product_6/2.jpeg",
                             ImageDetail_2 = "product_6/3.jpeg",
-                            Description = "ürün açıklaması",
+                            Description = "Kampanya fiyatından satılmak üzere 100 adetten fazla stok sunulmuştur.\r\nİncelemiş olduğunuz ürünün satış fiyatını satıcı belirlemektedir.\r\nBir ürün, birden fazla satıcı tarafından satılabilir. Birden fazla satıcı tarafından satışa sunulan ürünlerin satıcıları ürün için belirledikleri fiyata, satıcı puanlarına, teslimat statülerine, ürünlerdeki promosyonlara, kargonun bedava olup olmamasına ve ürünlerin hızlı teslimat ile teslim edilip edilememesine, ürünlerin stok ve kategorileri bilgilerine göre sıralanmaktadır.\r\nBu üründen en fazla 10 adet sipariş verilebilir.Belirlenen bu limit kurumsal siparişlerde geçerli olmayıp, kurumsal siparişler için farklı limitler belirlenebilmektedir.\r\n15 gün içinde ücretsiz iade. Detaylı bilgi için tıklayın.",
                             Materials = "60% cotton",
                             Dimensions = "110 x 33 x 100 cm",
                             Size = "L",
@@ -180,7 +180,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                             Comments = new List<Comment>
                             {
                                 new Comment{
-                                    Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec hendrerit libero, eu efficitur ex. Vestibulum eu pulvinar sem. Nam eget pharetra diam, id lobortis leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer posuere ultricies convallis. Sed convallis faucibus dui molestie malesuada. Aenean ultricies risus nec sem faucibus dignissim. Curabitur ut metus rutrum, luctus diam sed, venenatis sem. Nulla facilisi.",
+                                    Text = "Güzel. Çok beğendim.",
                                     PublishedOn = DateTime.Now.AddDays(-7),
                                     ProductId = 1,
                                     UserId = 1
@@ -193,7 +193,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                             Image = "product_7/1.jpeg",
                             ImageDetail_1 = "product_7/2.jpeg",
                             ImageDetail_2 = "product_7/3.jpeg",
-                            Description = "ürün açıklaması",
+                            Description = "Kampanya fiyatından satılmak üzere 100 adetten fazla stok sunulmuştur.\r\nİncelemiş olduğunuz ürünün satış fiyatını satıcı belirlemektedir.\r\nBir ürün, birden fazla satıcı tarafından satılabilir. Birden fazla satıcı tarafından satışa sunulan ürünlerin satıcıları ürün için belirledikleri fiyata, satıcı puanlarına, teslimat statülerine, ürünlerdeki promosyonlara, kargonun bedava olup olmamasına ve ürünlerin hızlı teslimat ile teslim edilip edilememesine, ürünlerin stok ve kategorileri bilgilerine göre sıralanmaktadır.\r\nBu üründen en fazla 10 adet sipariş verilebilir.Belirlenen bu limit kurumsal siparişlerde geçerli olmayıp, kurumsal siparişler için farklı limitler belirlenebilmektedir.\r\n15 gün içinde ücretsiz iade. Detaylı bilgi için tıklayın.",
                             Materials = "60% cotton",
                             Dimensions = "110 x 33 x 100 cm",
                             Size = "L",
@@ -206,7 +206,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                             Comments = new List<Comment>
                             {
                                 new Comment{
-                                    Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec hendrerit libero, eu efficitur ex. Vestibulum eu pulvinar sem. Nam eget pharetra diam, id lobortis leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer posuere ultricies convallis. Sed convallis faucibus dui molestie malesuada. Aenean ultricies risus nec sem faucibus dignissim. Curabitur ut metus rutrum, luctus diam sed, venenatis sem. Nulla facilisi.",
+                                    Text = "Güzel. Çok beğendim.",
                                     PublishedOn = DateTime.Now.AddDays(-7),
                                     ProductId = 1,
                                     UserId = 1
@@ -219,7 +219,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                             Image = "product_8/1.jpeg",
                             ImageDetail_1 = "product_8/2.jpeg",
                             ImageDetail_2 = "product_8/3.jpeg",
-                            Description = "ürün açıklaması",
+                            Description = "Kampanya fiyatından satılmak üzere 100 adetten fazla stok sunulmuştur.\r\nİncelemiş olduğunuz ürünün satış fiyatını satıcı belirlemektedir.\r\nBir ürün, birden fazla satıcı tarafından satılabilir. Birden fazla satıcı tarafından satışa sunulan ürünlerin satıcıları ürün için belirledikleri fiyata, satıcı puanlarına, teslimat statülerine, ürünlerdeki promosyonlara, kargonun bedava olup olmamasına ve ürünlerin hızlı teslimat ile teslim edilip edilememesine, ürünlerin stok ve kategorileri bilgilerine göre sıralanmaktadır.\r\nBu üründen en fazla 10 adet sipariş verilebilir.Belirlenen bu limit kurumsal siparişlerde geçerli olmayıp, kurumsal siparişler için farklı limitler belirlenebilmektedir.\r\n15 gün içinde ücretsiz iade. Detaylı bilgi için tıklayın.",
                             Materials = "60% cotton",
                             Dimensions = "110 x 33 x 100 cm",
                             Size = "L",
@@ -232,7 +232,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                             Comments = new List<Comment>
                             {
                                 new Comment{
-                                    Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec hendrerit libero, eu efficitur ex. Vestibulum eu pulvinar sem. Nam eget pharetra diam, id lobortis leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer posuere ultricies convallis. Sed convallis faucibus dui molestie malesuada. Aenean ultricies risus nec sem faucibus dignissim. Curabitur ut metus rutrum, luctus diam sed, venenatis sem. Nulla facilisi.",
+                                    Text = "Güzel. Çok beğendim.",
                                     PublishedOn = DateTime.Now.AddDays(-7),
                                     ProductId = 1,
                                     UserId = 1
@@ -245,7 +245,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                             Image = "product_9/1.jpeg",
                             ImageDetail_1 = "product_9/2.jpeg",
                             ImageDetail_2 = "product_9/3.jpeg",
-                            Description = "ürün açıklaması",
+                            Description = "Kampanya fiyatından satılmak üzere 100 adetten fazla stok sunulmuştur.\r\nİncelemiş olduğunuz ürünün satış fiyatını satıcı belirlemektedir.\r\nBir ürün, birden fazla satıcı tarafından satılabilir. Birden fazla satıcı tarafından satışa sunulan ürünlerin satıcıları ürün için belirledikleri fiyata, satıcı puanlarına, teslimat statülerine, ürünlerdeki promosyonlara, kargonun bedava olup olmamasına ve ürünlerin hızlı teslimat ile teslim edilip edilememesine, ürünlerin stok ve kategorileri bilgilerine göre sıralanmaktadır.\r\nBu üründen en fazla 10 adet sipariş verilebilir.Belirlenen bu limit kurumsal siparişlerde geçerli olmayıp, kurumsal siparişler için farklı limitler belirlenebilmektedir.\r\n15 gün içinde ücretsiz iade. Detaylı bilgi için tıklayın.",
                             Materials = "60% cotton",
                             Dimensions = "110 x 33 x 100 cm",
                             Size = "L",
@@ -258,7 +258,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                             Comments = new List<Comment>
                             {
                                 new Comment{
-                                    Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec hendrerit libero, eu efficitur ex. Vestibulum eu pulvinar sem. Nam eget pharetra diam, id lobortis leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer posuere ultricies convallis. Sed convallis faucibus dui molestie malesuada. Aenean ultricies risus nec sem faucibus dignissim. Curabitur ut metus rutrum, luctus diam sed, venenatis sem. Nulla facilisi.",
+                                    Text = "Güzel. Çok beğendim.",
                                     PublishedOn = DateTime.Now.AddDays(-7),
                                     ProductId = 1,
                                     UserId = 1
@@ -271,7 +271,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                             Image = "product_10/1.jpeg",
                             ImageDetail_1 = "product_10/2.jpeg",
                             ImageDetail_2 = "product_10/3.jpeg",
-                            Description = "ürün açıklaması",
+                            Description = "Kampanya fiyatından satılmak üzere 100 adetten fazla stok sunulmuştur.\r\nİncelemiş olduğunuz ürünün satış fiyatını satıcı belirlemektedir.\r\nBir ürün, birden fazla satıcı tarafından satılabilir. Birden fazla satıcı tarafından satışa sunulan ürünlerin satıcıları ürün için belirledikleri fiyata, satıcı puanlarına, teslimat statülerine, ürünlerdeki promosyonlara, kargonun bedava olup olmamasına ve ürünlerin hızlı teslimat ile teslim edilip edilememesine, ürünlerin stok ve kategorileri bilgilerine göre sıralanmaktadır.\r\nBu üründen en fazla 10 adet sipariş verilebilir.Belirlenen bu limit kurumsal siparişlerde geçerli olmayıp, kurumsal siparişler için farklı limitler belirlenebilmektedir.\r\n15 gün içinde ücretsiz iade. Detaylı bilgi için tıklayın.",
                             Materials = "60% cotton",
                             Dimensions = "110 x 33 x 100 cm",
                             Size = "L",
@@ -284,7 +284,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                             Comments = new List<Comment>
                             {
                                 new Comment{
-                                    Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec hendrerit libero, eu efficitur ex. Vestibulum eu pulvinar sem. Nam eget pharetra diam, id lobortis leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer posuere ultricies convallis. Sed convallis faucibus dui molestie malesuada. Aenean ultricies risus nec sem faucibus dignissim. Curabitur ut metus rutrum, luctus diam sed, venenatis sem. Nulla facilisi.",
+                                    Text = "Güzel. Çok beğendim.",
                                     PublishedOn = DateTime.Now.AddDays(-7),
                                     ProductId = 1,
                                     UserId = 1
@@ -297,7 +297,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                             Image = "product_11/1.jpeg",
                             ImageDetail_1 = "product_11/2.jpeg",
                             ImageDetail_2 = "product_11/3.jpeg",
-                            Description = "ürün açıklaması",
+                            Description = "Kampanya fiyatından satılmak üzere 100 adetten fazla stok sunulmuştur.\r\nİncelemiş olduğunuz ürünün satış fiyatını satıcı belirlemektedir.\r\nBir ürün, birden fazla satıcı tarafından satılabilir. Birden fazla satıcı tarafından satışa sunulan ürünlerin satıcıları ürün için belirledikleri fiyata, satıcı puanlarına, teslimat statülerine, ürünlerdeki promosyonlara, kargonun bedava olup olmamasına ve ürünlerin hızlı teslimat ile teslim edilip edilememesine, ürünlerin stok ve kategorileri bilgilerine göre sıralanmaktadır.\r\nBu üründen en fazla 10 adet sipariş verilebilir.Belirlenen bu limit kurumsal siparişlerde geçerli olmayıp, kurumsal siparişler için farklı limitler belirlenebilmektedir.\r\n15 gün içinde ücretsiz iade. Detaylı bilgi için tıklayın.",
                             Materials = "60% cotton",
                             Dimensions = "110 x 33 x 100 cm",
                             Size = "L",
@@ -310,7 +310,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                             Comments = new List<Comment>
                             {
                                 new Comment{
-                                    Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec hendrerit libero, eu efficitur ex. Vestibulum eu pulvinar sem. Nam eget pharetra diam, id lobortis leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer posuere ultricies convallis. Sed convallis faucibus dui molestie malesuada. Aenean ultricies risus nec sem faucibus dignissim. Curabitur ut metus rutrum, luctus diam sed, venenatis sem. Nulla facilisi.",
+                                    Text = "Güzel. Çok beğendim.",
                                     PublishedOn = DateTime.Now.AddDays(-7),
                                     ProductId = 1,
                                     UserId = 1
@@ -323,7 +323,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                             Image = "product_12/1.jpeg",
                             ImageDetail_1 = "product_12/2.jpeg",
                             ImageDetail_2 = "product_12/3.jpeg",
-                            Description = "ürün açıklaması",
+                            Description = "Kampanya fiyatından satılmak üzere 100 adetten fazla stok sunulmuştur.\r\nİncelemiş olduğunuz ürünün satış fiyatını satıcı belirlemektedir.\r\nBir ürün, birden fazla satıcı tarafından satılabilir. Birden fazla satıcı tarafından satışa sunulan ürünlerin satıcıları ürün için belirledikleri fiyata, satıcı puanlarına, teslimat statülerine, ürünlerdeki promosyonlara, kargonun bedava olup olmamasına ve ürünlerin hızlı teslimat ile teslim edilip edilememesine, ürünlerin stok ve kategorileri bilgilerine göre sıralanmaktadır.\r\nBu üründen en fazla 10 adet sipariş verilebilir.Belirlenen bu limit kurumsal siparişlerde geçerli olmayıp, kurumsal siparişler için farklı limitler belirlenebilmektedir.\r\n15 gün içinde ücretsiz iade. Detaylı bilgi için tıklayın.",
                             Materials = "60% cotton",
                             Dimensions = "110 x 33 x 100 cm",
                             Size = "L",
@@ -336,7 +336,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                             Comments = new List<Comment>
                             {
                                 new Comment{
-                                    Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec hendrerit libero, eu efficitur ex. Vestibulum eu pulvinar sem. Nam eget pharetra diam, id lobortis leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer posuere ultricies convallis. Sed convallis faucibus dui molestie malesuada. Aenean ultricies risus nec sem faucibus dignissim. Curabitur ut metus rutrum, luctus diam sed, venenatis sem. Nulla facilisi.",
+                                    Text = "Güzel. Çok beğendim.",
                                     PublishedOn = DateTime.Now.AddDays(-7),
                                     ProductId = 1,
                                     UserId = 1
@@ -349,7 +349,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                             Image = "product_13/1.jpeg",
                             ImageDetail_1 = "product_13/2.jpeg",
                             ImageDetail_2 = "product_13/3.jpeg",
-                            Description = "ürün açıklaması",
+                            Description = "Kampanya fiyatından satılmak üzere 100 adetten fazla stok sunulmuştur.\r\nİncelemiş olduğunuz ürünün satış fiyatını satıcı belirlemektedir.\r\nBir ürün, birden fazla satıcı tarafından satılabilir. Birden fazla satıcı tarafından satışa sunulan ürünlerin satıcıları ürün için belirledikleri fiyata, satıcı puanlarına, teslimat statülerine, ürünlerdeki promosyonlara, kargonun bedava olup olmamasına ve ürünlerin hızlı teslimat ile teslim edilip edilememesine, ürünlerin stok ve kategorileri bilgilerine göre sıralanmaktadır.\r\nBu üründen en fazla 10 adet sipariş verilebilir.Belirlenen bu limit kurumsal siparişlerde geçerli olmayıp, kurumsal siparişler için farklı limitler belirlenebilmektedir.\r\n15 gün içinde ücretsiz iade. Detaylı bilgi için tıklayın.",
                             Materials = "60% cotton",
                             Dimensions = "110 x 33 x 100 cm",
                             Size = "L",
@@ -362,7 +362,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                             Comments = new List<Comment>
                             {
                                 new Comment{
-                                    Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec hendrerit libero, eu efficitur ex. Vestibulum eu pulvinar sem. Nam eget pharetra diam, id lobortis leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer posuere ultricies convallis. Sed convallis faucibus dui molestie malesuada. Aenean ultricies risus nec sem faucibus dignissim. Curabitur ut metus rutrum, luctus diam sed, venenatis sem. Nulla facilisi.",
+                                    Text = "Güzel. Çok beğendim.",
                                     PublishedOn = DateTime.Now.AddDays(-7),
                                     ProductId = 1,
                                     UserId = 1
@@ -375,7 +375,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                             Image = "product_14/1.jpeg",
                             ImageDetail_1 = "product_14/2.jpeg",
                             ImageDetail_2 = "product_14/3.jpeg",
-                            Description = "ürün açıklaması",
+                            Description = "Kampanya fiyatından satılmak üzere 100 adetten fazla stok sunulmuştur.\r\nİncelemiş olduğunuz ürünün satış fiyatını satıcı belirlemektedir.\r\nBir ürün, birden fazla satıcı tarafından satılabilir. Birden fazla satıcı tarafından satışa sunulan ürünlerin satıcıları ürün için belirledikleri fiyata, satıcı puanlarına, teslimat statülerine, ürünlerdeki promosyonlara, kargonun bedava olup olmamasına ve ürünlerin hızlı teslimat ile teslim edilip edilememesine, ürünlerin stok ve kategorileri bilgilerine göre sıralanmaktadır.\r\nBu üründen en fazla 10 adet sipariş verilebilir.Belirlenen bu limit kurumsal siparişlerde geçerli olmayıp, kurumsal siparişler için farklı limitler belirlenebilmektedir.\r\n15 gün içinde ücretsiz iade. Detaylı bilgi için tıklayın.",
                             Materials = "60% cotton",
                             Dimensions = "110 x 33 x 100 cm",
                             Size = "L",
@@ -388,7 +388,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                             Comments = new List<Comment>
                             {
                                 new Comment{
-                                    Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec hendrerit libero, eu efficitur ex. Vestibulum eu pulvinar sem. Nam eget pharetra diam, id lobortis leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer posuere ultricies convallis. Sed convallis faucibus dui molestie malesuada. Aenean ultricies risus nec sem faucibus dignissim. Curabitur ut metus rutrum, luctus diam sed, venenatis sem. Nulla facilisi.",
+                                    Text = "Güzel. Çok beğendim.",
                                     PublishedOn = DateTime.Now.AddDays(-7),
                                     ProductId = 1,
                                     UserId = 1
@@ -401,7 +401,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                             Image = "product_15/1.jpeg",
                             ImageDetail_1 = "product_15/2.jpeg",
                             ImageDetail_2 = "product_15/3.jpeg",
-                            Description = "ürün açıklaması",
+                            Description = "Kampanya fiyatından satılmak üzere 100 adetten fazla stok sunulmuştur.\r\nİncelemiş olduğunuz ürünün satış fiyatını satıcı belirlemektedir.\r\nBir ürün, birden fazla satıcı tarafından satılabilir. Birden fazla satıcı tarafından satışa sunulan ürünlerin satıcıları ürün için belirledikleri fiyata, satıcı puanlarına, teslimat statülerine, ürünlerdeki promosyonlara, kargonun bedava olup olmamasına ve ürünlerin hızlı teslimat ile teslim edilip edilememesine, ürünlerin stok ve kategorileri bilgilerine göre sıralanmaktadır.\r\nBu üründen en fazla 10 adet sipariş verilebilir.Belirlenen bu limit kurumsal siparişlerde geçerli olmayıp, kurumsal siparişler için farklı limitler belirlenebilmektedir.\r\n15 gün içinde ücretsiz iade. Detaylı bilgi için tıklayın.",
                             Materials = "60% cotton",
                             Dimensions = "110 x 33 x 100 cm",
                             Size = "L",
@@ -414,7 +414,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                             Comments = new List<Comment>
                             {
                                 new Comment{
-                                    Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec hendrerit libero, eu efficitur ex. Vestibulum eu pulvinar sem. Nam eget pharetra diam, id lobortis leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer posuere ultricies convallis. Sed convallis faucibus dui molestie malesuada. Aenean ultricies risus nec sem faucibus dignissim. Curabitur ut metus rutrum, luctus diam sed, venenatis sem. Nulla facilisi.",
+                                    Text = "Güzel. Çok beğendim.",
                                     PublishedOn = DateTime.Now.AddDays(-7),
                                     ProductId = 1,
                                     UserId = 1
@@ -427,7 +427,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                             Image = "product_16/1.jpeg",
                             ImageDetail_1 = "product_16/2.jpeg",
                             ImageDetail_2 = "product_16/3.jpeg",
-                            Description = "ürün açıklaması",
+                            Description = "Kampanya fiyatından satılmak üzere 100 adetten fazla stok sunulmuştur.\r\nİncelemiş olduğunuz ürünün satış fiyatını satıcı belirlemektedir.\r\nBir ürün, birden fazla satıcı tarafından satılabilir. Birden fazla satıcı tarafından satışa sunulan ürünlerin satıcıları ürün için belirledikleri fiyata, satıcı puanlarına, teslimat statülerine, ürünlerdeki promosyonlara, kargonun bedava olup olmamasına ve ürünlerin hızlı teslimat ile teslim edilip edilememesine, ürünlerin stok ve kategorileri bilgilerine göre sıralanmaktadır.\r\nBu üründen en fazla 10 adet sipariş verilebilir.Belirlenen bu limit kurumsal siparişlerde geçerli olmayıp, kurumsal siparişler için farklı limitler belirlenebilmektedir.\r\n15 gün içinde ücretsiz iade. Detaylı bilgi için tıklayın.",
                             Materials = "60% cotton",
                             Dimensions = "110 x 33 x 100 cm",
                             Size = "L",
@@ -440,7 +440,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                             Comments = new List<Comment>
                             {
                                 new Comment{
-                                    Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec hendrerit libero, eu efficitur ex. Vestibulum eu pulvinar sem. Nam eget pharetra diam, id lobortis leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer posuere ultricies convallis. Sed convallis faucibus dui molestie malesuada. Aenean ultricies risus nec sem faucibus dignissim. Curabitur ut metus rutrum, luctus diam sed, venenatis sem. Nulla facilisi.",
+                                    Text = "Güzel. Çok beğendim.",
                                     PublishedOn = DateTime.Now.AddDays(-7),
                                     ProductId = 1,
                                     UserId = 1
@@ -453,7 +453,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                             Image = "product_17/1.jpeg",
                             ImageDetail_1 = "product_17/2.jpeg",
                             ImageDetail_2 = "product_17/3.jpeg",
-                            Description = "ürün açıklaması",
+                            Description = "Kampanya fiyatından satılmak üzere 100 adetten fazla stok sunulmuştur.\r\nİncelemiş olduğunuz ürünün satış fiyatını satıcı belirlemektedir.\r\nBir ürün, birden fazla satıcı tarafından satılabilir. Birden fazla satıcı tarafından satışa sunulan ürünlerin satıcıları ürün için belirledikleri fiyata, satıcı puanlarına, teslimat statülerine, ürünlerdeki promosyonlara, kargonun bedava olup olmamasına ve ürünlerin hızlı teslimat ile teslim edilip edilememesine, ürünlerin stok ve kategorileri bilgilerine göre sıralanmaktadır.\r\nBu üründen en fazla 10 adet sipariş verilebilir.Belirlenen bu limit kurumsal siparişlerde geçerli olmayıp, kurumsal siparişler için farklı limitler belirlenebilmektedir.\r\n15 gün içinde ücretsiz iade. Detaylı bilgi için tıklayın.",
                             Materials = "60% cotton",
                             Dimensions = "110 x 33 x 100 cm",
                             Size = "L",
@@ -466,7 +466,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                             Comments = new List<Comment>
                             {
                                 new Comment{
-                                    Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec hendrerit libero, eu efficitur ex. Vestibulum eu pulvinar sem. Nam eget pharetra diam, id lobortis leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer posuere ultricies convallis. Sed convallis faucibus dui molestie malesuada. Aenean ultricies risus nec sem faucibus dignissim. Curabitur ut metus rutrum, luctus diam sed, venenatis sem. Nulla facilisi.",
+                                    Text = "Güzel. Çok beğendim.",
                                     PublishedOn = DateTime.Now.AddDays(-7),
                                     ProductId = 1,
                                     UserId = 1
@@ -479,7 +479,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                             Image = "product_18/1.jpeg",
                             ImageDetail_1 = "product_18/2.jpeg",
                             ImageDetail_2 = "product_18/3.jpeg",
-                            Description = "ürün açıklaması",
+                            Description = "Kampanya fiyatından satılmak üzere 100 adetten fazla stok sunulmuştur.\r\nİncelemiş olduğunuz ürünün satış fiyatını satıcı belirlemektedir.\r\nBir ürün, birden fazla satıcı tarafından satılabilir. Birden fazla satıcı tarafından satışa sunulan ürünlerin satıcıları ürün için belirledikleri fiyata, satıcı puanlarına, teslimat statülerine, ürünlerdeki promosyonlara, kargonun bedava olup olmamasına ve ürünlerin hızlı teslimat ile teslim edilip edilememesine, ürünlerin stok ve kategorileri bilgilerine göre sıralanmaktadır.\r\nBu üründen en fazla 10 adet sipariş verilebilir.Belirlenen bu limit kurumsal siparişlerde geçerli olmayıp, kurumsal siparişler için farklı limitler belirlenebilmektedir.\r\n15 gün içinde ücretsiz iade. Detaylı bilgi için tıklayın.",
                             Materials = "60% cotton",
                             Dimensions = "110 x 33 x 100 cm",
                             Size = "L",
@@ -492,7 +492,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                             Comments = new List<Comment>
                             {
                                 new Comment{
-                                    Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec hendrerit libero, eu efficitur ex. Vestibulum eu pulvinar sem. Nam eget pharetra diam, id lobortis leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer posuere ultricies convallis. Sed convallis faucibus dui molestie malesuada. Aenean ultricies risus nec sem faucibus dignissim. Curabitur ut metus rutrum, luctus diam sed, venenatis sem. Nulla facilisi.",
+                                    Text = "Güzel. Çok beğendim.",
                                     PublishedOn = DateTime.Now.AddDays(-7),
                                     ProductId = 1,
                                     UserId = 1
@@ -505,7 +505,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                             Image = "product_19/1.jpeg",
                             ImageDetail_1 = "product_19/2.jpeg",
                             ImageDetail_2 = "product_19/3.jpeg",
-                            Description = "ürün açıklaması",
+                            Description = "Kampanya fiyatından satılmak üzere 100 adetten fazla stok sunulmuştur.\r\nİncelemiş olduğunuz ürünün satış fiyatını satıcı belirlemektedir.\r\nBir ürün, birden fazla satıcı tarafından satılabilir. Birden fazla satıcı tarafından satışa sunulan ürünlerin satıcıları ürün için belirledikleri fiyata, satıcı puanlarına, teslimat statülerine, ürünlerdeki promosyonlara, kargonun bedava olup olmamasına ve ürünlerin hızlı teslimat ile teslim edilip edilememesine, ürünlerin stok ve kategorileri bilgilerine göre sıralanmaktadır.\r\nBu üründen en fazla 10 adet sipariş verilebilir.Belirlenen bu limit kurumsal siparişlerde geçerli olmayıp, kurumsal siparişler için farklı limitler belirlenebilmektedir.\r\n15 gün içinde ücretsiz iade. Detaylı bilgi için tıklayın.",
                             Materials = "60% cotton",
                             Dimensions = "110 x 33 x 100 cm",
                             Size = "L",
@@ -518,7 +518,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                             Comments = new List<Comment>
                             {
                                 new Comment{
-                                    Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec hendrerit libero, eu efficitur ex. Vestibulum eu pulvinar sem. Nam eget pharetra diam, id lobortis leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer posuere ultricies convallis. Sed convallis faucibus dui molestie malesuada. Aenean ultricies risus nec sem faucibus dignissim. Curabitur ut metus rutrum, luctus diam sed, venenatis sem. Nulla facilisi.",
+                                    Text = "Güzel. Çok beğendim.",
                                     PublishedOn = DateTime.Now.AddDays(-7),
                                     ProductId = 1,
                                     UserId = 1
@@ -531,7 +531,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                             Image = "product_20/1.jpeg",
                             ImageDetail_1 = "product_20/2.jpeg",
                             ImageDetail_2 = "product_20/3.jpeg",
-                            Description = "ürün açıklaması",
+                            Description = "Kampanya fiyatından satılmak üzere 100 adetten fazla stok sunulmuştur.\r\nİncelemiş olduğunuz ürünün satış fiyatını satıcı belirlemektedir.\r\nBir ürün, birden fazla satıcı tarafından satılabilir. Birden fazla satıcı tarafından satışa sunulan ürünlerin satıcıları ürün için belirledikleri fiyata, satıcı puanlarına, teslimat statülerine, ürünlerdeki promosyonlara, kargonun bedava olup olmamasına ve ürünlerin hızlı teslimat ile teslim edilip edilememesine, ürünlerin stok ve kategorileri bilgilerine göre sıralanmaktadır.\r\nBu üründen en fazla 10 adet sipariş verilebilir.Belirlenen bu limit kurumsal siparişlerde geçerli olmayıp, kurumsal siparişler için farklı limitler belirlenebilmektedir.\r\n15 gün içinde ücretsiz iade. Detaylı bilgi için tıklayın.",
                             Materials = "60% cotton",
                             Dimensions = "110 x 33 x 100 cm",
                             Size = "L",
@@ -544,7 +544,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                             Comments = new List<Comment>
                             {
                                 new Comment{
-                                    Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec hendrerit libero, eu efficitur ex. Vestibulum eu pulvinar sem. Nam eget pharetra diam, id lobortis leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer posuere ultricies convallis. Sed convallis faucibus dui molestie malesuada. Aenean ultricies risus nec sem faucibus dignissim. Curabitur ut metus rutrum, luctus diam sed, venenatis sem. Nulla facilisi.",
+                                    Text = "Güzel. Çok beğendim.",
                                     PublishedOn = DateTime.Now.AddDays(-7),
                                     ProductId = 1,
                                     UserId = 1
@@ -557,7 +557,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                             Image = "product_21/1.jpeg",
                             ImageDetail_1 = "product_21/2.jpeg",
                             ImageDetail_2 = "product_21/3.jpeg",
-                            Description = "ürün açıklaması",
+                            Description = "Kampanya fiyatından satılmak üzere 100 adetten fazla stok sunulmuştur.\r\nİncelemiş olduğunuz ürünün satış fiyatını satıcı belirlemektedir.\r\nBir ürün, birden fazla satıcı tarafından satılabilir. Birden fazla satıcı tarafından satışa sunulan ürünlerin satıcıları ürün için belirledikleri fiyata, satıcı puanlarına, teslimat statülerine, ürünlerdeki promosyonlara, kargonun bedava olup olmamasına ve ürünlerin hızlı teslimat ile teslim edilip edilememesine, ürünlerin stok ve kategorileri bilgilerine göre sıralanmaktadır.\r\nBu üründen en fazla 10 adet sipariş verilebilir.Belirlenen bu limit kurumsal siparişlerde geçerli olmayıp, kurumsal siparişler için farklı limitler belirlenebilmektedir.\r\n15 gün içinde ücretsiz iade. Detaylı bilgi için tıklayın.",
                             Materials = "60% cotton",
                             Dimensions = "110 x 33 x 100 cm",
                             Size = "L",
@@ -570,7 +570,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                             Comments = new List<Comment>
                             {
                                 new Comment{
-                                    Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec hendrerit libero, eu efficitur ex. Vestibulum eu pulvinar sem. Nam eget pharetra diam, id lobortis leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer posuere ultricies convallis. Sed convallis faucibus dui molestie malesuada. Aenean ultricies risus nec sem faucibus dignissim. Curabitur ut metus rutrum, luctus diam sed, venenatis sem. Nulla facilisi.",
+                                    Text = "Güzel. Çok beğendim.",
                                     PublishedOn = DateTime.Now.AddDays(-7),
                                     ProductId = 1,
                                     UserId = 1
@@ -583,7 +583,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                             Image = "product_22/1.jpeg",
                             ImageDetail_1 = "product_22/2.jpeg",
                             ImageDetail_2 = "product_22/3.jpeg",
-                            Description = "ürün açıklaması",
+                            Description = "Kampanya fiyatından satılmak üzere 100 adetten fazla stok sunulmuştur.\r\nİncelemiş olduğunuz ürünün satış fiyatını satıcı belirlemektedir.\r\nBir ürün, birden fazla satıcı tarafından satılabilir. Birden fazla satıcı tarafından satışa sunulan ürünlerin satıcıları ürün için belirledikleri fiyata, satıcı puanlarına, teslimat statülerine, ürünlerdeki promosyonlara, kargonun bedava olup olmamasına ve ürünlerin hızlı teslimat ile teslim edilip edilememesine, ürünlerin stok ve kategorileri bilgilerine göre sıralanmaktadır.\r\nBu üründen en fazla 10 adet sipariş verilebilir.Belirlenen bu limit kurumsal siparişlerde geçerli olmayıp, kurumsal siparişler için farklı limitler belirlenebilmektedir.\r\n15 gün içinde ücretsiz iade. Detaylı bilgi için tıklayın.",
                             Materials = "60% cotton",
                             Dimensions = "110 x 33 x 100 cm",
                             Size = "L",
@@ -596,7 +596,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                             Comments = new List<Comment>
                             {
                                 new Comment{
-                                    Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec hendrerit libero, eu efficitur ex. Vestibulum eu pulvinar sem. Nam eget pharetra diam, id lobortis leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer posuere ultricies convallis. Sed convallis faucibus dui molestie malesuada. Aenean ultricies risus nec sem faucibus dignissim. Curabitur ut metus rutrum, luctus diam sed, venenatis sem. Nulla facilisi.",
+                                    Text = "Güzel. Çok beğendim.",
                                     PublishedOn = DateTime.Now.AddDays(-7),
                                     ProductId = 1,
                                     UserId = 1
@@ -609,7 +609,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                             Image = "product_23/1.jpeg",
                             ImageDetail_1 = "product_23/2.jpeg",
                             ImageDetail_2 = "product_23/3.jpeg",
-                            Description = "ürün açıklaması",
+                            Description = "Kampanya fiyatından satılmak üzere 100 adetten fazla stok sunulmuştur.\r\nİncelemiş olduğunuz ürünün satış fiyatını satıcı belirlemektedir.\r\nBir ürün, birden fazla satıcı tarafından satılabilir. Birden fazla satıcı tarafından satışa sunulan ürünlerin satıcıları ürün için belirledikleri fiyata, satıcı puanlarına, teslimat statülerine, ürünlerdeki promosyonlara, kargonun bedava olup olmamasına ve ürünlerin hızlı teslimat ile teslim edilip edilememesine, ürünlerin stok ve kategorileri bilgilerine göre sıralanmaktadır.\r\nBu üründen en fazla 10 adet sipariş verilebilir.Belirlenen bu limit kurumsal siparişlerde geçerli olmayıp, kurumsal siparişler için farklı limitler belirlenebilmektedir.\r\n15 gün içinde ücretsiz iade. Detaylı bilgi için tıklayın.",
                             Materials = "60% cotton",
                             Dimensions = "110 x 33 x 100 cm",
                             Size = "L",
@@ -622,7 +622,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                             Comments = new List<Comment>
                             {
                                 new Comment{
-                                    Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec hendrerit libero, eu efficitur ex. Vestibulum eu pulvinar sem. Nam eget pharetra diam, id lobortis leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer posuere ultricies convallis. Sed convallis faucibus dui molestie malesuada. Aenean ultricies risus nec sem faucibus dignissim. Curabitur ut metus rutrum, luctus diam sed, venenatis sem. Nulla facilisi.",
+                                    Text = "Güzel. Çok beğendim.",
                                     PublishedOn = DateTime.Now.AddDays(-7),
                                     ProductId = 1,
                                     UserId = 1
@@ -635,7 +635,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                             Image = "product_24/1.jpeg",
                             ImageDetail_1 = "product_24/2.jpeg",
                             ImageDetail_2 = "product_24/3.jpeg",
-                            Description = "ürün açıklaması",
+                            Description = "Kampanya fiyatından satılmak üzere 100 adetten fazla stok sunulmuştur.\r\nİncelemiş olduğunuz ürünün satış fiyatını satıcı belirlemektedir.\r\nBir ürün, birden fazla satıcı tarafından satılabilir. Birden fazla satıcı tarafından satışa sunulan ürünlerin satıcıları ürün için belirledikleri fiyata, satıcı puanlarına, teslimat statülerine, ürünlerdeki promosyonlara, kargonun bedava olup olmamasına ve ürünlerin hızlı teslimat ile teslim edilip edilememesine, ürünlerin stok ve kategorileri bilgilerine göre sıralanmaktadır.\r\nBu üründen en fazla 10 adet sipariş verilebilir.Belirlenen bu limit kurumsal siparişlerde geçerli olmayıp, kurumsal siparişler için farklı limitler belirlenebilmektedir.\r\n15 gün içinde ücretsiz iade. Detaylı bilgi için tıklayın.",
                             Materials = "60% cotton",
                             Dimensions = "110 x 33 x 100 cm",
                             Size = "L",
@@ -648,7 +648,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                             Comments = new List<Comment>
                             {
                                 new Comment{
-                                    Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec hendrerit libero, eu efficitur ex. Vestibulum eu pulvinar sem. Nam eget pharetra diam, id lobortis leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer posuere ultricies convallis. Sed convallis faucibus dui molestie malesuada. Aenean ultricies risus nec sem faucibus dignissim. Curabitur ut metus rutrum, luctus diam sed, venenatis sem. Nulla facilisi.",
+                                    Text = "Güzel. Çok beğendim.",
                                     PublishedOn = DateTime.Now.AddDays(-7),
                                     ProductId = 1,
                                     UserId = 1

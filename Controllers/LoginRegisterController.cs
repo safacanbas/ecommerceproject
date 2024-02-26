@@ -6,20 +6,21 @@ using Microsoft.EntityFrameworkCore;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication;
+using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace Ecommerce.Controllers;
 
-public class LoginController : Controller
+public class LoginRegisterController : Controller
 {
     private readonly IUserRepository _userRepository;
-    public LoginController(IUserRepository userRepository)
+    public LoginRegisterController(IUserRepository userRepository)
     {
         _userRepository = userRepository;
     }
 
     
 
-    public IActionResult login()
+    public IActionResult Login()
     {
         if(User.Identity!.IsAuthenticated)
         {
@@ -31,15 +32,16 @@ public class LoginController : Controller
     public async Task<IActionResult> Logout()
     {
         await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
-        return RedirectToAction("login", "Login");
+        return RedirectToAction("Login", "LoginRegister");
     }
 
     [HttpPost]
-    public async Task<IActionResult> login(LoginViewModel model)
+    public async Task<IActionResult> Login(LoginViewModel model)
     {
         if (ModelState.IsValid)
         {
-            var isUser = _userRepository.Users.FirstOrDefault(x => x.Email == model.Email && x.Password == model.Password);
+            //var isUser = _userRepository.Users.FirstOrDefault(x => x.Email == model.Email && x.Password == model.Password);
+            var isUser = _userRepository.Users.Where(x => x.Email == model.Email && x.Password == model.Password).FirstOrDefault();
 
             if (isUser != null)
             {
@@ -48,7 +50,7 @@ public class LoginController : Controller
                 userClaims.Add(new Claim(ClaimTypes.NameIdentifier, isUser.UserId.ToString()));
                 userClaims.Add(new Claim(ClaimTypes.Name, isUser.Name ?? ""));
                 userClaims.Add(new Claim(ClaimTypes.GivenName, isUser.FullName ?? ""));
-                //userClaims.Add(new Claim(ClaimTypes.UserData, isUser.UserImage ?? ""));
+                userClaims.Add(new Claim(ClaimTypes.UserData, isUser.UserImage ?? ""));
 
                 if (isUser.Email == "info@safacanbas.com")
                 {
@@ -70,15 +72,56 @@ public class LoginController : Controller
                  );
                 return RedirectToAction("Index", "Home");
             }
+            else
+            {
+                ModelState.AddModelError("", "Kullanıcı adı veya şifre yanlış!!!");
+            }
         }
+
         else
         {
-            ModelState.AddModelError("", "Kullanıcı adı veya şifre yanlış!!!");
+            ModelState.AddModelError("", "Şifre en az 6 karakter içermelidir!!!");
         }
         return View(model);
     }
 
-    
+    public IActionResult Register()
+    {
+        if (User.Identity!.IsAuthenticated)
+        {
+            return RedirectToAction("Login", "LoginRegister");
+        }
+        return View();
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> Register(RegisterViewModel model)
+    {
+        if (ModelState.IsValid)
+        {
+            var user = await _userRepository.Users.FirstOrDefaultAsync(x =>  x.Email == model.Email || x.Name == model.Name);
+            if (user == null)
+            {
+                _userRepository.CreateUser(new Entity.User
+                { 
+                    Name = model.Name,
+                    FullName = model.FullName,
+                    Email = model.Email,
+                    Password = model.Password,
+                    UserImage = "bosAvatar.png"
+                });
+                return RedirectToAction("Login");
+
+            }
+            else
+            {
+                ModelState.AddModelError("", "Alınmış Email ya da Username!");
+            }
+        }
+        return View(model);
+    }
+
+
 
 
 }
