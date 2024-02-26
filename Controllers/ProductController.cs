@@ -42,7 +42,7 @@ public class ProductController : Controller
             Text = Text,
             PublishedOn = DateTime.Now,
             ProductId = ProductId,
-            User = new User { UserName = UserName, UserImage = "userImage.jpg" },
+            User = new User { Name = UserName, UserImage = "userImage.jpg" },
         };
         _commentRepository.CreateComments(entity);
         return Json(new

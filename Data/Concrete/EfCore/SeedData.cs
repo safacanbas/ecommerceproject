@@ -20,9 +20,9 @@ namespace Ecommerce.Data.Concrete.EfCore
                 if (!context.Users.Any())
                 {
                     context.Users.AddRange(
-                        new User { UserName = "SafaCanBas", UserImage = "userImage.jpg"},
-                        new User { UserName = "ÇakılEfendi", UserImage = "userImage_1.jpg" },
-                        new User { UserName = "EymenTürk", UserImage = "userImage_2.jpg" }
+                        new User { Name = "safacanbas", FullName = "Safa Can BAŞ", Email = "info@safacanbas.com", Password = "123456789", UserImage = "userImage.jpg"},
+                        new User { Name = "çakılefendi", FullName = "Çakıl Efendi", Email = "info@cakilefendi.com", Password = "987654321", UserImage = "userImage_1.jpg" },
+                        new User { Name = "eymentürk", FullName = "Eymen Türk", Email = "info@eymentürk.com", Password = "159753", UserImage = "userImage_2.jpg" }
                     );
                     context.SaveChanges();
                 }

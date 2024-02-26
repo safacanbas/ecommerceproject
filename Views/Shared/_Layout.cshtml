@@ -40,6 +40,18 @@
     <link rel="stylesheet" type="text/css" href="~/assets/css/util.css">
     <link rel="stylesheet" type="text/css" href="~/assets/css/main.css">
     <!--===============================================================================================-->
+    <style>
+        .vertical-center {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login-card {
+            width: 600px;
+        }
+    </style>
 </head>
 
 
@@ -78,19 +90,17 @@
     </div>
 
     <!-- Footer -->
-    <footer class="bg3 p-t-75 p-b-32">
-        @await Html.PartialAsync("_Footer")
-    </footer>
+    @await Html.PartialAsync("_Footer")
+
 
 
     <!-- Back to top -->
-    <div class="btn-back-to-top" id="myBtn">
-        <span class="symbol-btn-back-to-top">
-            <i class="zmdi zmdi-chevron-up"></i>
-        </span>
-    </div>
+    @*         <span class="symbol-btn-back-to-top">
+    <i class="zmdi zmdi-chevron-up"></i>
+    </span>
+    *@    </div>
 
-    @RenderSection("Scripts", required:false)
+    @RenderSection("Scripts", required: false)
 
     <!--===============================================================================================-->
     <script src="~/assets/vendor/jquery/jquery-3.2.1.min.js"></script>
