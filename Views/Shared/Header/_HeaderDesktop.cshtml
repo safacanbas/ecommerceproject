@@ -7,9 +7,10 @@
             </a>
             @if (User.Identity!.IsAuthenticated)
             {
-                <a href="#" class="flex-c-m trans-04 p-lr-25">
+                <a href="/profile/@User.Identity.Name" class="flex-c-m trans-04 p-lr-25">
                     @User.Identity.Name
                 </a>
+
                 <a asp-controller="LoginRegister" asp-action="Logout" class="flex-c-m trans-04 p-lr-25">
                     Logout
                 </a>

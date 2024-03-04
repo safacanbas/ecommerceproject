@@ -9,6 +9,5 @@ namespace Ecommerce.Data.Concrete.EfCore
         public DbSet<Product> Products => Set<Product>();
         public DbSet<Comment> Comments => Set<Comment>();
         public DbSet<User> Users => Set<User>();
-
     }
 }

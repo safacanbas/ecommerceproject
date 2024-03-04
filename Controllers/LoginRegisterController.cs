@@ -18,11 +18,11 @@ public class LoginRegisterController : Controller
         _userRepository = userRepository;
     }
 
-    
+
 
     public IActionResult Login()
     {
-        if(User.Identity!.IsAuthenticated)
+        if (User.Identity!.IsAuthenticated)
         {
             return RedirectToAction("Index", "Home");
         }
@@ -99,11 +99,11 @@ public class LoginRegisterController : Controller
     {
         if (ModelState.IsValid)
         {
-            var user = await _userRepository.Users.FirstOrDefaultAsync(x =>  x.Email == model.Email || x.Name == model.Name);
+            var user = await _userRepository.Users.FirstOrDefaultAsync(x => x.Email == model.Email || x.Name == model.Name);
             if (user == null)
             {
                 _userRepository.CreateUser(new Entity.User
-                { 
+                {
                     Name = model.Name,
                     FullName = model.FullName,
                     Email = model.Email,
@@ -120,7 +120,6 @@ public class LoginRegisterController : Controller
         }
         return View(model);
     }
-
 
 
 

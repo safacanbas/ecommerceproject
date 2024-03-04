@@ -294,30 +294,12 @@
                                                 Add a review
                                             </h5>
 
-                                            <div class="flex-w flex-m p-t-50 p-b-23">
-                                                <span class="stext-102 cl3 m-r-16">
-                                                    Your Rating
-                                                </span>
-                                            </div>
-
                                             <div class="row p-b-25">
-                                                <div class="col-sm-6 p-b-5">
-                                                    <label class="stext-102 cl3" for="UserName">Name</label>
-                                                    <input class="size-111 bor8 stext-102 cl2 p-lr-20" id="UserName" type="text"
-                                                           name="UserName">
-                                                </div>
-
                                                 <div class="col-12 p-b-5">
                                                     <label class="stext-102 cl3" for="Text">Comment</label>
                                                     <textarea type="text" class="size-110 bor8 stext-102 cl2 p-lr-20 p-tb-10"
                                                               id="Text" name="Text"></textarea>
                                                 </div>
-
-                                                @* <div class="col-sm-6 p-b-5">
-                                            <label class="stext-102 cl3" for="email">Email</label>
-                                            <input class="size-111 bor8 stext-102 cl2 p-lr-20" id="email"
-                                            type="text" name="email">
-                                            </div> *@
                                             </div>
 
                                             <button id="yorumGönder" class="flex-c-m stext-101 cl0 size-112 bg7 bor11 hov-btn3 p-lr-15 trans-04 m-b-10">
@@ -328,7 +310,7 @@
                                     else
                                     {
                                         <div class="border p-4 bg-light">
-                                            <h5 class="text-center">Yorum yapabilmeniz için <a asp-controller="Login" asp-action="Login">giriş</a> yapmalısınız.</h5>
+                                            <h5 class="text-center">Yorum yapabilmeniz için <a asp-controller="LoginRegister" asp-action="Login">giriş</a> yapmalısınız.</h5>
                                         </div>
                                     }
 
@@ -383,31 +365,34 @@
                     dataType: 'json',
                     data: {
                         ProductId: $('#ProductId').val(),
-                        UserName: $('#UserName').val(),
+                        userName: $('#Name').val(),
                         Text: $('#Text').val()
                     },
                     success: function (yorum) {
                         console.log(yorum);
                         var date = new Date(yorum.publishedOn);
 
-                        $('#productComments').append(`<div class="flex-w flex-t p-b-68">
-                                                                    <div class="wrap-pic-s size-109 bor0 of-hidden m-r-18 m-t-6">
-                                                                        <img src="~/assets/images/userImage/${yorum.userImage}" alt="AVATAR">
-                                                                    </div>
-                                                                    <div class="size-207">
-                                                                        <div class="flex-w flex-sb-m p-b-17">
-                                                                            <span class="mtext-107 cl2 p-r-20">${yorum.userName}</span>
-                                                                            <span class="fs-18 cl11">
-                                                                                <p class="text-secondary">
-                                                                                            <small>${date.toLocaleDateString()}</small>
-                                                                                </p>
-                                                                            </span>
-                                                                        </div>
-                                                                        <p class="stext-102 cl6">${yorum.Text}</p>
-                                                                    </div>
-                                                                </div>`);
+                        $('#productComments').append(`
+                            <div class="flex-w flex-t p-b-68">
+                                <div class="wrap-pic-s size-109 bor0 of-hidden m-r-18 m-t-6">
+                                    <img src="~/assets/images/userImage/${yorum.userImage}" alt="AVATAR">
+                                </div>
+                                <div class="size-207">
+                                    <div class="flex-w flex-sb-m p-b-17">
+                                        <span class="mtext-107 cl2 p-r-20">${yorum.userName}</span>
+                                        <span class="fs-18 cl11">
+                                            <p class="text-secondary">
+                                                <small>${date.toLocaleDateString()}</small>
+                                            </p>
+                                        </span>
+                                    </div>
+                                    <p class="stext-102 cl6">${yorum.text}</p>
+                                </div>
+                            </div>
+                        `);
 
-                        $('#UserName').val('');
+                        $('#userImage').val('');
+                        $('#userName').val('');
                         $('#Text').val('');
 
                         var adet = parseInt($("#commentCount").text());

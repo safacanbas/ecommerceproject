@@ -1445,11 +1445,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Asp.Net Core Proje\\proje\\Ecommerce\\Ecommerce.csproj",
+      "projectUniqueName": "C:\\Users\\safa5\\Desktop\\proje\\Ecommerce\\Ecommerce.csproj",
       "projectName": "Ecommerce",
-      "projectPath": "D:\\Asp.Net Core Proje\\proje\\Ecommerce\\Ecommerce.csproj",
+      "projectPath": "C:\\Users\\safa5\\Desktop\\proje\\Ecommerce\\Ecommerce.csproj",
       "packagesPath": "C:\\Users\\safa5\\.nuget\\packages\\",
-      "outputPath": "D:\\Asp.Net Core Proje\\proje\\Ecommerce\\obj\\",
+      "outputPath": "C:\\Users\\safa5\\Desktop\\proje\\Ecommerce\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

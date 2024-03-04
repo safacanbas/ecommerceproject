@@ -42,6 +42,11 @@ app.UseAuthorization();
 SeedData.TestVerileriniDoldur(app);
 
 app.MapControllerRoute(
+    name: "profile",
+    pattern: "Profile/{name}",
+    defaults: new { controller = "Users", action = "Profile" });
+
+app.MapControllerRoute(
     name: "product_detail",
     pattern: "Product/productDetail/{url}",
     defaults: new {controller = "Product", action = "productDetail" });

@@ -1,0 +1,33 @@
+﻿@model User
+
+<div class="d-flex flex-column vh-100">
+    <div class="container flex-grow-1">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="text-center">
+                    <img src="~/assets/images/userImage/@Model.UserImage" alt="Profil Resmi" class="profile-img mb-3 img-fluid" style="max-width: 300px; max-height: 300px;">
+                    <h3>@Model.FullName</h3>
+                    <h4>@Model.Name</h4>
+                    <p>Email: @Model.Email</p>
+                    <p>Şifreniz: @Model.Password</p>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <h3>Hakkımda</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget odio nulla. Morbi a nisl magna. Nulla tincidunt neque ac eros congue vehicula. Duis at ex lorem. Fusce vel tellus ac tortor blandit consectetur. Sed vitae consequat elit.</p>
+                <h3>İlgi Alanları</h3>
+                <ul>
+                    <li>Web Development</li>
+                    <li>Photography</li>
+                    <li>Traveling</li>
+                </ul>
+                <h3>Sosyal Medya</h3>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="#">Facebook</a></li>
+                    <li class="list-inline-item"><a href="#">Twitter</a></li>
+                    <li class="list-inline-item"><a href="#">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

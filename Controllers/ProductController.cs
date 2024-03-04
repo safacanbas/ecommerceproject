@@ -44,9 +44,9 @@ public class ProductController : Controller
 
         var entity = new Comment
         {
+            ProductId = ProductId,
             Text = Text,
             PublishedOn = DateTime.Now,
-            ProductId = ProductId,
             UserId = int.Parse(userId ?? ""),
         };
         _commentRepository.CreateComments(entity);
