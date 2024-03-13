@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Ecommerce.Entity
 {
@@ -18,7 +19,7 @@ namespace Ecommerce.Entity
         public string? Dimensions { get; set; }
         public string? Url { get; set; }
         public bool IsActive { get; set; }
-        public int UserId { get; set; }
+        public string UserId { get; set; } = null!;
         public User User { get; set; } = null!;
         public List<Comment> Comments { get; set; } = new List<Comment>();
     }

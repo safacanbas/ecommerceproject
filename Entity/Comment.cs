@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace Ecommerce.Entity
@@ -10,7 +11,7 @@ namespace Ecommerce.Entity
         public DateTime PublishedOn { get; set; }
         public int ProductId { get; set; }
         public Product Product { get; set; } = null!;
-        public int UserId { get; set; }
+        public string UserId { get; set; } = null!;
         public User User { get; set; } = null!;
     }
 }

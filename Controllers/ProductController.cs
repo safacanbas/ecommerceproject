@@ -47,7 +47,7 @@ public class ProductController : Controller
             ProductId = ProductId,
             Text = Text,
             PublishedOn = DateTime.Now,
-            UserId = int.Parse(userId ?? ""),
+            UserId = userId
         };
         _commentRepository.CreateComments(entity);
         return Json(new

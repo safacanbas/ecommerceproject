@@ -1,4 +1,6 @@
 ﻿using Ecommerce.Data.Abstract;
+using Ecommerce.Entity;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -7,9 +9,11 @@ namespace Ecommerce.Controllers
     public class UsersController : Controller
     {
         private readonly IUserRepository _userRepository;
-        public UsersController(IUserRepository userRepository)
+        private UserManager<User> _userManager;
+        public UsersController(IUserRepository userRepository, UserManager<User> userManager)
         {
             _userRepository = userRepository;
+            _userManager = userManager;
         }
         public async Task<IActionResult> Profile(string name)
         {
@@ -18,12 +22,12 @@ namespace Ecommerce.Controllers
                 return NotFound();
             }
 
-            var user = await _userRepository
+            var user = await _userManager
                         .Users
                         .Include(x => x.Products)
                         .Include(x => x.Comments)
                         .ThenInclude(x => x.Product)
-                        .FirstOrDefaultAsync(x => x.Name == name);
+                        .FirstOrDefaultAsync(x => x.UserName == name);
             if (user == null)
             {
                 return BadRequest();

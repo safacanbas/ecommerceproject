@@ -1,4 +1,5 @@
 using Ecommerce.Entity;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 
@@ -6,7 +7,9 @@ namespace Ecommerce.Data.Concrete.EfCore
 {
     public static class SeedData
     {
-        public static void TestVerileriniDoldur(IApplicationBuilder app)
+        private const string adminUser = "admin";
+        private const string adminPassword = "Admin_123";
+        public static async void TestVerileri(IApplicationBuilder app)
         {
             var context = app.ApplicationServices.CreateScope().ServiceProvider.GetService<ProductContext>();
 
@@ -17,14 +20,27 @@ namespace Ecommerce.Data.Concrete.EfCore
                     context.Database.Migrate();
                 }
 
-                if (!context.Users.Any())
+                var userManager = app.ApplicationServices.CreateScope().ServiceProvider.GetRequiredService<UserManager<User>>();
+
+                var user = await userManager.FindByNameAsync(adminUser);
+
+                if (user == null)
                 {
-                    context.Users.AddRange(
-                        new User { Name = "safacanbas", FullName = "Safa Can BAŞ", Email = "info@safacanbas.com", Password = "123456789", UserImage = "userImage.jpg"},
-                        new User { Name = "çakılefendi", FullName = "Çakıl Efendi", Email = "info@cakilefendi.com", Password = "987654321", UserImage = "userImage_1.jpg" },
-                        new User { Name = "eymentürk", FullName = "Eymen Türk", Email = "info@eymentürk.com", Password = "159753", UserImage = "userImage_2.jpg" }
-                    );
-                    context.SaveChanges();
+
+                    user = new User
+                    {
+                        FullName = "Safa Can BAŞ",
+                        UserName = adminUser,
+                        Email = "info@safacanbas.com",
+                        PhoneNumber = "05998887766",
+                        UserImage = "userImage.jpg"
+                    };
+
+                    var result = await userManager.CreateAsync(user, adminPassword);
+                    if (!result.Succeeded)
+                    {
+                        throw new Exception($"Kullanıcı oluşturma başarısız: {string.Join(", ", result.Errors.Select(e => e.Description))}");
+                    }
                 }
 
                 if (!context.Products.Any())
@@ -44,7 +60,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                             Piece = 1,
                             Price = 1600.64,
                             IsActive = true,
-                            UserId = 1,
+                            UserId = user.Id,
                             Url = "Lufian-Todillo-Erkek-Sweatshirt-Siyah",
                             Comments = new List<Comment>
                             {
@@ -53,7 +69,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                                     Text = "Güzel. Çok beğendim.",
                                     PublishedOn = DateTime.Now,
                                     ProductId = 1,
-                                    UserId = 1
+                                    UserId = user.Id,
                                 }
                             }
                         },
@@ -71,7 +87,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                             Piece = 5,
                             Price = 3500.31,
                             IsActive = true,
-                            UserId = 1,
+                            UserId = user.Id,
                             Url = "Lufian-Star-Erkek-Sweatshirt-Acik-Gri",
                             Comments = new List<Comment>
                             {
@@ -79,7 +95,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                                     Text = "Güzel. Çok beğendim.",
                                     PublishedOn = DateTime.Now.AddDays(-7),
                                     ProductId = 1,
-                                    UserId = 1
+                                    UserId = user.Id,
                                 }
                             }
                         },
@@ -97,15 +113,16 @@ namespace Ecommerce.Data.Concrete.EfCore
                             Piece = 5,
                             Price = 2548.50,
                             IsActive = true,
-                            UserId = 1,
+                            UserId = user.Id,
                             Url = "Lufian-Lowe-Erkek-Sweatshirt-Siyah"
-,                            Comments = new List<Comment>
+,
+                            Comments = new List<Comment>
                             {
                                 new Comment{
                                     Text = "Güzel. Çok beğendim.",
                                     PublishedOn = DateTime.Now.AddDays(-7),
                                     ProductId = 1,
-                                    UserId = 1
+                                    UserId = user.Id,
                                 }
                             }
                         },
@@ -123,7 +140,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                             Piece = 5,
                             Price = 757.00,
                             IsActive = true,
-                            UserId = 1,
+                            UserId = user.Id,
                             Url = "Lufian-Finn-Modern-Grafik-T-Shirt-Beyaz",
                             Comments = new List<Comment>
                             {
@@ -131,7 +148,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                                     Text = "Güzel. Çok beğendim.",
                                     PublishedOn = DateTime.Now.AddDays(-7),
                                     ProductId = 1,
-                                    UserId = 1
+                                    UserId = user.Id,
                                 }
                             }
                         },
@@ -149,7 +166,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                             Piece = 5,
                             Price = 344.75,
                             IsActive = true,
-                            UserId = 1,
+                            UserId = user.Id,
                             Url = "Mavi-Logo-Baskili-Lacivert-Tisort-Oversize-Genis-Kesim",
                             Comments = new List<Comment>
                             {
@@ -157,7 +174,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                                     Text = "Güzel. Çok beğendim.",
                                     PublishedOn = DateTime.Now.AddDays(-7),
                                     ProductId = 1,
-                                    UserId = 1
+                                    UserId = user.Id,
                                 }
                             }
                         },
@@ -175,7 +192,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                             Piece = 5,
                             Price = 933.20,
                             IsActive = true,
-                            UserId = 1,
+                            UserId = user.Id,
                             Url = "Mavi-Logo-Baskili-Kapuonlu-Kirmizi-Sweatshirt",
                             Comments = new List<Comment>
                             {
@@ -183,7 +200,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                                     Text = "Güzel. Çok beğendim.",
                                     PublishedOn = DateTime.Now.AddDays(-7),
                                     ProductId = 1,
-                                    UserId = 1
+                                    UserId = user.Id,
                                 }
                             }
                         },
@@ -201,7 +218,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                             Piece = 5,
                             Price = 524.66,
                             IsActive = true,
-                            UserId = 1,
+                            UserId = user.Id,
                             Url = "Mavi-Victoria-Simsiyah-Gold-Icon-Jean-Pantolon",
                             Comments = new List<Comment>
                             {
@@ -209,7 +226,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                                     Text = "Güzel. Çok beğendim.",
                                     PublishedOn = DateTime.Now.AddDays(-7),
                                     ProductId = 1,
-                                    UserId = 1
+                                    UserId = user.Id,
                                 }
                             }
                         },
@@ -227,7 +244,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                             Piece = 5,
                             Price = 1833.96,
                             IsActive = true,
-                            UserId = 1,
+                            UserId = user.Id,
                             Url = "Mavi-Star-Kolej-Indigo-Si-Jean-Pantolon",
                             Comments = new List<Comment>
                             {
@@ -235,7 +252,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                                     Text = "Güzel. Çok beğendim.",
                                     PublishedOn = DateTime.Now.AddDays(-7),
                                     ProductId = 1,
-                                    UserId = 1
+                                    UserId = user.Id,
                                 }
                             }
                         },
@@ -253,7 +270,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                             Piece = 5,
                             Price = 7575.00,
                             IsActive = true,
-                            UserId = 1,
+                            UserId = user.Id,
                             Url = "Mavi-Logo-Baskili-Cizgili-Tisort-Regular-Fit-Normal-Kesim",
                             Comments = new List<Comment>
                             {
@@ -261,7 +278,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                                     Text = "Güzel. Çok beğendim.",
                                     PublishedOn = DateTime.Now.AddDays(-7),
                                     ProductId = 1,
-                                    UserId = 1
+                                    UserId = user.Id,
                                 }
                             }
                         },
@@ -279,7 +296,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                             Piece = 5,
                             Price = 2557.85,
                             IsActive = true,
-                            UserId = 1,
+                            UserId = user.Id,
                             Url = "Lufian-Tommy-Erkek-Deri-Sneaker-Ayakkabi-Siyah",
                             Comments = new List<Comment>
                             {
@@ -287,7 +304,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                                     Text = "Güzel. Çok beğendim.",
                                     PublishedOn = DateTime.Now.AddDays(-7),
                                     ProductId = 1,
-                                    UserId = 1
+                                    UserId = user.Id,
                                 }
                             }
                         },
@@ -305,7 +322,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                             Piece = 5,
                             Price = 6345.16,
                             IsActive = true,
-                            UserId = 1,
+                            UserId = user.Id,
                             Url = "Lufian-Jeremy-Erkek-Esofman-Alti-Siyah",
                             Comments = new List<Comment>
                             {
@@ -313,7 +330,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                                     Text = "Güzel. Çok beğendim.",
                                     PublishedOn = DateTime.Now.AddDays(-7),
                                     ProductId = 1,
-                                    UserId = 1
+                                    UserId = user.Id,
                                 }
                             }
                         },
@@ -331,7 +348,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                             Piece = 5,
                             Price = 6543.16,
                             IsActive = true,
-                            UserId = 1,
+                            UserId = user.Id,
                             Url = "Lufian-Alexander-Erkek-Sweatshirt-Siyah",
                             Comments = new List<Comment>
                             {
@@ -339,7 +356,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                                     Text = "Güzel. Çok beğendim.",
                                     PublishedOn = DateTime.Now.AddDays(-7),
                                     ProductId = 1,
-                                    UserId = 1
+                                    UserId = user.Id,
                                 }
                             }
                         },
@@ -357,7 +374,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                             Piece = 5,
                             Price = 1853.49,
                             IsActive = true,
-                            UserId = 1,
+                            UserId = user.Id,
                             Url = "Lufian-Star-Erkek-Sweatshirt-Antrasit",
                             Comments = new List<Comment>
                             {
@@ -365,7 +382,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                                     Text = "Güzel. Çok beğendim.",
                                     PublishedOn = DateTime.Now.AddDays(-7),
                                     ProductId = 1,
-                                    UserId = 1
+                                    UserId = user.Id,
                                 }
                             }
                         },
@@ -383,7 +400,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                             Piece = 5,
                             Price = 5584.79,
                             IsActive = true,
-                            UserId = 1,
+                            UserId = user.Id,
                             Url = "Lufian-Laggero-Triko-Spor-Ayakkabi-Siyah",
                             Comments = new List<Comment>
                             {
@@ -391,7 +408,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                                     Text = "Güzel. Çok beğendim.",
                                     PublishedOn = DateTime.Now.AddDays(-7),
                                     ProductId = 1,
-                                    UserId = 1
+                                    UserId = user.Id,
                                 }
                             }
                         },
@@ -409,7 +426,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                             Piece = 5,
                             Price = 8436.85,
                             IsActive = true,
-                            UserId = 1,
+                            UserId = user.Id,
                             Url = "Lufian-Nora-Smart-Erkek-Polo-Tisort-Siyah",
                             Comments = new List<Comment>
                             {
@@ -417,7 +434,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                                     Text = "Güzel. Çok beğendim.",
                                     PublishedOn = DateTime.Now.AddDays(-7),
                                     ProductId = 1,
-                                    UserId = 1
+                                    UserId = user.Id,
                                 }
                             }
                         },
@@ -435,7 +452,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                             Piece = 5,
                             Price = 2958.64,
                             IsActive = true,
-                            UserId = 1,
+                            UserId = user.Id,
                             Url = "Mavi-Kapuonlu-Gri-Ceket-Oversize-Genis-Kesim",
                             Comments = new List<Comment>
                             {
@@ -443,7 +460,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                                     Text = "Güzel. Çok beğendim.",
                                     PublishedOn = DateTime.Now.AddDays(-7),
                                     ProductId = 1,
-                                    UserId = 1
+                                    UserId = user.Id,
                                 }
                             }
                         },
@@ -461,7 +478,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                             Piece = 5,
                             Price = 5758.64,
                             IsActive = true,
-                            UserId = 1,
+                            UserId = user.Id,
                             Url = "Mavi-Serenay-Gold-Shape-Indigo-Si-Jean-Pantolon",
                             Comments = new List<Comment>
                             {
@@ -469,7 +486,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                                     Text = "Güzel. Çok beğendim.",
                                     PublishedOn = DateTime.Now.AddDays(-7),
                                     ProductId = 1,
-                                    UserId = 1
+                                    UserId = user.Id,
                                 }
                             }
                         },
@@ -487,7 +504,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                             Piece = 5,
                             Price = 2748.64,
                             IsActive = true,
-                            UserId = 1,
+                            UserId = user.Id,
                             Url = "Mavi-Kapuonlu-Siyah-Sisme-Mont",
                             Comments = new List<Comment>
                             {
@@ -495,7 +512,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                                     Text = "Güzel. Çok beğendim.",
                                     PublishedOn = DateTime.Now.AddDays(-7),
                                     ProductId = 1,
-                                    UserId = 1
+                                    UserId = user.Id,
                                 }
                             }
                         },
@@ -513,7 +530,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                             Piece = 5,
                             Price = 558.64,
                             IsActive = true,
-                            UserId = 1,
+                            UserId = user.Id,
                             Url = "Lufian-Vera-Kadin-Orme-Sweatshirt-Siyah",
                             Comments = new List<Comment>
                             {
@@ -521,7 +538,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                                     Text = "Güzel. Çok beğendim.",
                                     PublishedOn = DateTime.Now.AddDays(-7),
                                     ProductId = 1,
-                                    UserId = 1
+                                    UserId = user.Id,
                                 }
                             }
                         },
@@ -539,7 +556,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                             Piece = 5,
                             Price = 9858.64,
                             IsActive = true,
-                            UserId = 1,
+                            UserId = user.Id,
                             Url = "Lufian-Ujin-Kadin-Orme-Sweatshirt-Siyah",
                             Comments = new List<Comment>
                             {
@@ -547,7 +564,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                                     Text = "Güzel. Çok beğendim.",
                                     PublishedOn = DateTime.Now.AddDays(-7),
                                     ProductId = 1,
-                                    UserId = 1
+                                    UserId = user.Id,
                                 }
                             }
                         },
@@ -565,7 +582,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                             Piece = 5,
                             Price = 4788.64,
                             IsActive = true,
-                            UserId = 1,
+                            UserId = user.Id,
                             Url = "Lufian-Edward-Spor-Polo-Erkek-Tisort-Beyaz",
                             Comments = new List<Comment>
                             {
@@ -573,7 +590,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                                     Text = "Güzel. Çok beğendim.",
                                     PublishedOn = DateTime.Now.AddDays(-7),
                                     ProductId = 1,
-                                    UserId = 1
+                                    UserId = user.Id,
                                 }
                             }
                         },
@@ -591,7 +608,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                             Piece = 5,
                             Price = 4548.64,
                             IsActive = true,
-                            UserId = 1,
+                            UserId = user.Id,
                             Url = "Lufian-Never-Erkek-Sweatshirt-Lacivert",
                             Comments = new List<Comment>
                             {
@@ -599,7 +616,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                                     Text = "Güzel. Çok beğendim.",
                                     PublishedOn = DateTime.Now.AddDays(-7),
                                     ProductId = 1,
-                                    UserId = 1
+                                    UserId = user.Id,
                                 }
                             }
                         },
@@ -617,7 +634,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                             Piece = 5,
                             Price = 658.64,
                             IsActive = true,
-                            UserId = 1,
+                            UserId = user.Id,
                             Url = "Lufian-Paul-Sneaker-Beyaz",
                             Comments = new List<Comment>
                             {
@@ -625,7 +642,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                                     Text = "Güzel. Çok beğendim.",
                                     PublishedOn = DateTime.Now.AddDays(-7),
                                     ProductId = 1,
-                                    UserId = 1
+                                    UserId = user.Id,
                                 }
                             }
                         },
@@ -643,7 +660,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                             Piece = 5,
                             Price = 8549.64,
                             IsActive = true,
-                            UserId = 1,
+                            UserId = user.Id,
                             Url = "Lufian-Jeremy-Erkek-Esofman-Alti-Lacivert",
                             Comments = new List<Comment>
                             {
@@ -651,7 +668,7 @@ namespace Ecommerce.Data.Concrete.EfCore
                                     Text = "Güzel. Çok beğendim.",
                                     PublishedOn = DateTime.Now.AddDays(-7),
                                     ProductId = 1,
-                                    UserId = 1
+                                    UserId = user.Id,
                                 }
                             }
                         }

@@ -8,12 +8,13 @@ namespace Ecommerce.Models
         [Required]
         [EmailAddress]
         [Display(Name = "Email")]
-        public string? Email { get; set; }
+        public string Email { get; set; } = null!;
 
         [Required]
         [StringLength(10, ErrorMessage = "{0} alanı en az {2} karakter içermelidir.", MinimumLength = 6)]
         [DataType(DataType.Password)]
         [Display(Name = "Password")]
-        public string? Password { get; set; }
+        public string Password { get; set; } = null!;
+        public bool RememberMe { get; set; } = true;
     }
 }

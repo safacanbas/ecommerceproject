@@ -7,28 +7,28 @@ namespace Ecommerce.Models
     {
         [Required]
         [Display(Name = "User Name")]
-        public string? Name { get; set; }
+        public string UserName { get; set; } = string.Empty;
 
         [Required]
         [Display(Name = "Full Name")]
-        public string? FullName { get; set; }
+        public string FullName { get; set; } =string.Empty;
 
         [Required]
         [EmailAddress]
         [Display(Name = "Email")]
-        public string? Email { get; set; }
+        public string Email { get; set; } = string.Empty;
 
         [Required]
         [StringLength(10, ErrorMessage = "{0} alanı en az {2} karakter içermelidir.", MinimumLength = 6)]
         [DataType(DataType.Password)]
         [Display(Name = "Password")]
-        public string? Password { get; set; }
+        public string Password { get; set; } = string.Empty;
 
         [Required]
         [DataType(DataType.Password)]
         [Compare(nameof(Password), ErrorMessage = "Parolalarınız birbiriyle eşleşmiyor.")]
         [Display(Name = "Password")]
-        public string? ConfirmPassword { get; set; }
+        public string ConfirmPassword { get; set; } = string.Empty;
 
     }
 }
